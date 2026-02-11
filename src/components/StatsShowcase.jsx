@@ -1,0 +1,184 @@
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { Activity, BarChart3, Zap } from 'lucide-react';
+
+const StatsShowcase = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+
+  const y1 = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.5]);
+
+  const stats = [
+    {
+      icon: <Activity className="w-6 h-6" />,
+      value: '328',
+      label: 'Durchschn. Pushups/Woche',
+      change: '+12%',
+      color: 'text-green-400',
+    },
+    {
+      icon: <BarChart3 className="w-6 h-6" />,
+      value: '94%',
+      label: 'Formgenauigkeit',
+      change: '+3%',
+      color: 'text-blue-400',
+    },
+    {
+      icon: <Zap className="w-6 h-6" />,
+      value: '28',
+      label: 'Trainingssträhne (Tage)',
+      change: 'Rekord!',
+      color: 'text-orange-400',
+    },
+  ];
+
+  return (
+    <section id="stats" ref={ref} className="py-24 px-6 overflow-hidden">
+      <div className="container mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Left: Stats Cards with Parallax */}
+          <motion.div style={{ opacity }} className="relative">
+            <motion.div
+              style={{ y: y1 }}
+              className="space-y-6"
+            >
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                  Deine Fortschritte.{' '}
+                  <span className="text-gradient">Visualisiert.</span>
+                </h2>
+                <p className="text-xl text-gray-400">
+                  Sieh auf einen Blick, wie sich deine Leistung entwickelt.
+                  VAMI trackt alles für dich.
+                </p>
+              </motion.div>
+
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="glass-effect rounded-2xl p-6 hover:bg-white/10 transition-all"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-3">
+                      <div className={`${stat.color}`}>{stat.icon}</div>
+                      <span className="text-gray-400">{stat.label}</span>
+                    </div>
+                    <span className="text-sm text-green-400">{stat.change}</span>
+                  </div>
+                  <div className={`text-4xl font-bold ${stat.color}`}>
+                    {stat.value}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+
+          {/* Right: App Screenshot Mockup */}
+          <motion.div
+            style={{ y: y2 }}
+            className="relative"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              {/* iPhone Frame */}
+              <div className="relative mx-auto w-full max-w-sm">
+                <div className="glass-effect rounded-[3rem] p-4 shadow-2xl">
+                  <div className="bg-gradient-to-br from-vami-secondary to-vami-dark rounded-[2.5rem] overflow-hidden aspect-[9/19]">
+                    {/* Workout Details Screenshot */}
+                    <img
+                      src="/assets/app-stats.png"
+                      alt="VAMI App Statistiken und Analysen"
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // Fallback wenn Bild nicht gefunden
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = `
+                          <div class="w-full h-full flex items-center justify-center p-8">
+                            <div class="text-center">
+                              <svg class="w-20 h-20 mx-auto mb-4 text-vami-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                              <p class="text-gray-400 text-sm">
+                                Speichere den Workout Details Screenshot als<br/>/public/assets/app-stats.png
+                              </p>
+                            </div>
+                          </div>
+                        `;
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Chart Elements */}
+              <motion.div
+                className="absolute top-10 -right-6 glass-effect rounded-xl p-4 shadow-lg"
+                animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
+                transition={{ duration: 4, repeat: Infinity }}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-8 bg-orange-400 rounded"></div>
+                  <div className="w-2 h-12 bg-orange-500 rounded"></div>
+                  <div className="w-2 h-6 bg-orange-600 rounded"></div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="absolute bottom-20 -left-6 glass-effect rounded-xl p-4 shadow-lg"
+                animate={{ y: [0, 15, 0], rotate: [0, -5, 0] }}
+                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+              >
+                <Activity className="w-8 h-8 text-green-400" />
+              </motion.div>
+
+              {/* Background Gradient */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl -z-10"></div>
+            </motion.div>
+          </motion.div>
+        </div>
+
+        {/* Additional Metrics Row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
+        >
+          {[
+            { value: '2.5k', label: 'Gesamt Pushups' },
+            { value: '42', label: 'Workouts' },
+            { value: '87%', label: 'Verbesserung' },
+            { value: '156', label: 'Minuten trainiert' },
+          ].map((metric, index) => (
+            <div key={index} className="text-center">
+              <div className="text-3xl font-bold text-vami-primary mb-1">
+                {metric.value}
+              </div>
+              <div className="text-sm text-gray-400">{metric.label}</div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default StatsShowcase;

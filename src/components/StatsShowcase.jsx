@@ -17,22 +17,22 @@ const StatsShowcase = () => {
     {
       icon: <Activity className="w-6 h-6" />,
       value: '328',
-      label: 'Durchschn. Pushups/Woche',
+      label: 'Avg. Push-ups/Week',
       change: '+12%',
       color: 'text-green-400',
     },
     {
       icon: <BarChart3 className="w-6 h-6" />,
       value: '94%',
-      label: 'Formgenauigkeit',
+      label: 'Form Accuracy',
       change: '+3%',
       color: 'text-blue-400',
     },
     {
       icon: <Zap className="w-6 h-6" />,
       value: '28',
-      label: 'Trainingssträhne (Tage)',
-      change: 'Rekord!',
+      label: 'Training Streak (Days)',
+      change: 'Record!',
       color: 'text-orange-400',
     },
   ];
@@ -54,12 +54,12 @@ const StatsShowcase = () => {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                  Deine Fortschritte.{' '}
-                  <span className="text-gradient">Visualisiert.</span>
+                  Your Progress.{' '}
+                  <span className="text-gradient">Visualized.</span>
                 </h2>
                 <p className="text-xl text-gray-400">
-                  Sieh auf einen Blick, wie sich deine Leistung entwickelt.
-                  VAMI trackt alles für dich.
+                  See at a glance how your performance evolves.
+                  VAMI tracks everything for you.
                 </p>
               </motion.div>
 
@@ -163,10 +163,10 @@ const StatsShowcase = () => {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { value: '2.5k', label: 'Gesamt Pushups' },
+            { value: '2.5k', label: 'Total Push-ups' },
             { value: '42', label: 'Workouts' },
-            { value: '87%', label: 'Verbesserung' },
-            { value: '156', label: 'Minuten trainiert' },
+            { value: '87%', label: 'Improvement' },
+            { value: '156', label: 'Minutes Trained' },
           ].map((metric, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl font-bold text-vami-primary mb-1">

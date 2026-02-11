@@ -15,10 +15,13 @@ const Hero = () => {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center pt-24 pb-20 md:pt-20 md:pb-32 px-4 md:px-6 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-24 pb-32 md:pt-20 md:pb-40 px-4 md:px-6 overflow-hidden"
     >
       {/* Animated Mesh Gradient Background */}
       <div className="absolute inset-0 mesh-gradient opacity-60" />
+
+      {/* Bottom Gradient Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent pointer-events-none" />
 
       {/* Floating Orbs - Hidden on mobile for performance */}
       <motion.div
@@ -113,35 +116,6 @@ const Hero = () => {
               <p className="text-center text-xs md:text-sm text-gray-500">
                 Free • iOS 15.0+ • No Ads • Offline AI
               </p>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              className="grid grid-cols-3 gap-4 md:gap-8 px-4 md:px-0"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9, duration: 0.8 }}
-            >
-              {[
-                { value: '5k+', label: 'Active Users' },
-                { value: '4.8★', label: 'App Store' },
-                { value: '95%', label: 'Accuracy' },
-              ].map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9 + index * 0.1 }}
-                  className="group"
-                >
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gradient-premium mb-0.5 md:mb-1 group-hover:scale-110 transition-transform">
-                    {stat.value}
-                  </div>
-                  <div className="text-[10px] sm:text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wider">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
             </motion.div>
           </motion.div>
 

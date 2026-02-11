@@ -38,8 +38,17 @@ const StatsShowcase = () => {
   ];
 
   return (
-    <section id="stats" ref={ref} className="py-24 px-6 overflow-hidden">
-      <div className="container mx-auto">
+    <section id="stats" ref={ref} className="relative py-20 md:py-32 px-6 overflow-hidden">
+      {/* Top Gradient Fade */}
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-slate-950 via-slate-950/50 to-transparent pointer-events-none" />
+
+      {/* Bottom Gradient Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent pointer-events-none" />
+
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/30 to-slate-950" />
+
+      <div className="container mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Stats Cards with Parallax */}
           <motion.div style={{ opacity }} className="relative">

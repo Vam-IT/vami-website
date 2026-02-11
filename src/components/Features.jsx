@@ -1,35 +1,38 @@
 import { motion } from 'framer-motion';
-import { Brain, Hash, TrendingDown, Lock } from 'lucide-react';
+import { Brain, Hash, BarChart2, Lock } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
       icon: <Brain className="w-7 h-7" />,
       title: 'AI Form Correction',
-      description: 'Real-time feedback on depth and posture. AI recognizes faulty movements and gives you instant visual feedback.',
+      description: 'Real-time feedback on your form. Perfect every rep.',
       gradient: 'from-blue-500 via-blue-600 to-cyan-500',
       glowColor: 'rgba(59, 130, 246, 0.3)',
     },
     {
       icon: <Hash className="w-7 h-7" />,
-      title: 'Auto-Counter',
-      description: 'Forget counting. Focus on execution. VAMI automatically counts every repetition.',
+      title: 'Auto Counting',
+      description: 'Focus on execution. VAMI counts automatically.',
       gradient: 'from-orange-500 via-orange-600 to-red-500',
       glowColor: 'rgba(249, 115, 22, 0.3)',
     },
     {
-      icon: <TrendingDown className="w-7 h-7" />,
-      title: 'Fatigue Analysis',
-      description: 'Recognize when your form deteriorates. The app visualizes your muscle fatigue and helps you avoid injuries.',
-      gradient: 'from-purple-500 via-purple-600 to-pink-500',
-      glowColor: 'rgba(168, 85, 247, 0.3)',
+      icon: <BarChart2 className="w-7 h-7" />,
+      title: 'Track Progress',
+      description: 'See your improvements with detailed analytics.',
+      gradient: 'from-green-500 via-green-600 to-emerald-500',
+      glowColor: 'rgba(34, 197, 94, 0.3)',
     },
   ];
 
   return (
-    <section id="features" className="relative py-32 px-6 overflow-hidden">
+    <section id="features" className="relative py-20 md:py-32 pb-32 md:pb-40 px-6 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950" />
+
+      {/* Bottom Gradient Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent pointer-events-none" />
 
       <div className="container mx-auto relative z-10">
         <motion.div
@@ -50,13 +53,11 @@ const Features = () => {
           </motion.div>
 
           <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
-            Why 5,000+ Users{' '}
-            <span className="text-gradient-premium">Choose VAMI</span>
+            Everything You{' '}
+            <span className="text-gradient-premium">Need</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto font-light">
-            Advanced AI technology meets simplicity.
-            <br className="hidden md:block" />
-            Everything you need in one free app.
+          <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-light">
+            AI-powered training in one simple app.
           </p>
         </motion.div>
 
@@ -124,13 +125,19 @@ const Features = () => {
           ))}
         </div>
 
+        {/* Soft Divider */}
+        <div className="relative my-16 md:my-24">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-white/5"></div>
+          </div>
+        </div>
+
         {/* Privacy Highlight */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20"
+          transition={{ duration: 0.8, delay: 0.3 }}
         >
           <motion.div
             whileHover={{ scale: 1.01 }}
@@ -157,14 +164,14 @@ const Features = () => {
               </motion.div>
 
               <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                Your Privacy.{' '}
-                <span className="text-gradient-premium">Protected.</span>
+                100% Private.{' '}
+                <span className="text-gradient-premium">100% Yours.</span>
               </h3>
 
               <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-                All AI runs on your iPhone. No cloud. No servers. No data collection.
+                All AI runs on your iPhone. No cloud. No data collection.
                 <br />
-                <span className="text-white font-semibold text-2xl mt-2 block">100% Private. 100% Offline.</span>
+                <span className="text-white font-semibold text-xl mt-2 block">Your data never leaves your device.</span>
               </p>
             </div>
           </motion.div>

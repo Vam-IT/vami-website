@@ -22,8 +22,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-white/10 py-12 px-6">
-      <div className="container mx-auto">
+    <footer className="relative border-t border-white/10 py-16 md:py-20 px-6">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 to-slate-950" />
+
+      <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">

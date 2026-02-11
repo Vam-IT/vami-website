@@ -3,8 +3,14 @@ import { Download } from 'lucide-react';
 
 const DownloadCTA = () => {
   return (
-    <section id="download" className="py-16 md:py-24 px-4 md:px-6">
-      <div className="container mx-auto">
+    <section id="download" className="relative py-20 md:py-32 px-4 md:px-6 overflow-hidden">
+      {/* Top Gradient Fade */}
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-slate-950 via-slate-950/50 to-transparent pointer-events-none" />
+
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/30 to-slate-950" />
+
+      <div className="container mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -133,7 +133,7 @@ const Hero = () => {
                 className="relative glass-card rounded-[2.5rem] p-3 shadow-2xl max-w-[300px]"
               >
                 <img
-                  src="/assets/app-main.png"
+                  src="assets/app-main.jpg"
                   alt="VAMI App Interface"
                   className="rounded-[2rem] w-full"
                 />

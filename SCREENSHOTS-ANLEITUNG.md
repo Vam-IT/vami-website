@@ -5,7 +5,7 @@
 Du musst die 4 App-Screenshots, die du mir gezeigt hast, in das Projekt integrieren.
 
 ### Screenshot 1: Hauptbildschirm (Home Screen)
-**Speicherort:** `public/assets/app-main.png`
+**Speicherort:** `public/assets/app-main.jpg`
 **Beschreibung:** Der Screenshot mit:
 - "Good Afternoon, Max!"
 - Feuer-Icon mit 3-Tage-Strähne
@@ -13,7 +13,7 @@ Du musst die 4 App-Screenshots, die du mir gezeigt hast, in das Projekt integrie
 - "START WORKOUT" Button
 
 ### Screenshot 2: Workout Details
-**Speicherort:** `public/assets/app-stats.png`
+**Speicherort:** `public/assets/app-stats.jpg`
 **Beschreibung:** Der Screenshot mit:
 - Rep-Performance Graph
 - Tiefster Rep: 52°
@@ -31,8 +31,8 @@ Du musst die 4 App-Screenshots, die du mir gezeigt hast, in das Projekt integrie
 ### Option 2: Direkt vom Mac
 1. Öffne die Screenshots (wenn bereits auf dem Mac)
 2. Benenne sie um:
-   - Home Screen → `app-main.png`
-   - Workout Details → `app-stats.png`
+   - Home Screen → `app-main.jpg`
+   - Workout Details → `app-stats.jpg`
 3. Verschiebe sie in den Ordner: `/Users/veselinkolev/IdeaProjects/VAMI-Website/public/assets/`
 
 ## Befehle zum Verschieben (Terminal)
@@ -47,8 +47,8 @@ cd /Users/veselinkolev/IdeaProjects/VAMI-Website
 mkdir -p public/assets
 
 # Verschiebe die Screenshots (ersetze <pfad-zum-screenshot> mit dem echten Pfad)
-cp ~/Downloads/screenshot1.png public/assets/app-main.png
-cp ~/Downloads/screenshot2.png public/assets/app-stats.png
+cp ~/Downloads/screenshot1.jpg public/assets/app-main.jpg
+cp ~/Downloads/screenshot2.jpg public/assets/app-stats.jpg
 ```
 
 ## Nachdem du die Screenshots gespeichert hast:
@@ -63,8 +63,8 @@ Falls die Screenshots zu groß sind, kannst du sie komprimieren:
 
 ```bash
 # Mit ImageMagick (falls installiert)
-convert public/assets/app-main.png -resize 800x public/assets/app-main.png
-convert public/assets/app-stats.png -resize 800x public/assets/app-stats.png
+convert public/assets/app-main.jpg -resize 800x public/assets/app-main.jpg
+convert public/assets/app-stats.jpg -resize 800x public/assets/app-stats.jpg
 ```
 
 Oder nutze ein Online-Tool wie https://tinypng.com/

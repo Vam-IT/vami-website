@@ -114,23 +114,9 @@ const StatsShowcase = () => {
                   <div className="bg-gradient-to-br from-vami-secondary to-vami-dark rounded-[2.5rem] overflow-hidden aspect-[9/19]">
                     {/* Workout Details Screenshot */}
                     <img
-                      src="/assets/app-stats.png"
+                      src="assets/app-stats.jpg"
                       alt="VAMI App Statistiken und Analysen"
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        // Fallback wenn Bild nicht gefunden
-                        e.target.style.display = 'none';
-                        e.target.parentElement.innerHTML = `
-                          <div class="w-full h-full flex items-center justify-center p-8">
-                            <div class="text-center">
-                              <svg class="w-20 h-20 mx-auto mb-4 text-vami-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                              <p class="text-gray-400 text-sm">
-                                Speichere den Workout Details Screenshot als<br/>/public/assets/app-stats.png
-                              </p>
-                            </div>
-                          </div>
-                        `;
-                      }}
                     />
                   </div>
                 </div>

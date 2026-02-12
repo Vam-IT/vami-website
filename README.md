@@ -99,11 +99,21 @@ Die VAMI-Farben und Custom-Animationen sind in [tailwind.config.js](tailwind.con
 
 ## 🚢 Deployment
 
-Die Website kann auf folgenden Plattformen deployed werden:
+### GitHub Pages (Empfohlen)
+
+Die Website wird automatisch via GitHub Actions deployed, wenn Änderungen auf den `V2` Branch gepusht werden.
+
+**Setup-Schritte:**
+1. Gehe zu den Repository-Einstellungen → Pages
+2. Wähle als Source: "GitHub Actions"
+3. Die Website wird automatisch unter `https://vam-it.github.io/vami-website/` verfügbar sein
+
+Die Deployment-Konfiguration befindet sich in `.github/workflows/static.yml`.
+
+### Weitere Deployment-Optionen
 
 - **Vercel**: `npm run build` → Vercel CLI
 - **Netlify**: Automatisches Deployment via Git
-- **GitHub Pages**: Via `gh-pages` Package
 
 ## 📄 Lizenz
 

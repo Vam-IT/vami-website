@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -5,9 +7,11 @@ const Footer = () => {
     <footer className="relative border-t border-white/5 py-6 px-6">
       <div className="container mx-auto flex flex-col items-center gap-3 text-center">
         <div className="flex items-center gap-4 text-xs text-gray-500">
-          <a href="#" className="hover:text-gray-300 transition-colors">Privacy</a>
+          <Link to="/privacy" className="hover:text-gray-300 transition-colors">Privacy</Link>
           <span className="text-white/10">•</span>
-          <a href="#" className="hover:text-gray-300 transition-colors">Imprint</a>
+          <Link to="/terms" className="hover:text-gray-300 transition-colors">Terms</Link>
+          <span className="text-white/10">•</span>
+          <Link to="/imprint" className="hover:text-gray-300 transition-colors">Imprint</Link>
           <span className="text-white/10">•</span>
           <a href="mailto:support@vami.app" className="hover:text-gray-300 transition-colors">Support</a>
         </div>

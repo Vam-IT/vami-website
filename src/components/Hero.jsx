@@ -105,7 +105,7 @@ const Hero = () => {
           </motion.a>
 
           <p className="text-center text-[11px] text-gray-500">
-            Free • iOS 15.0+ • No Ads • Offline AI
+            Free • iOS 17.0+ • No Ads • Offline AI
           </p>
         </motion.div>
       </div>

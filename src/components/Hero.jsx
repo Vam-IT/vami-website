@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { Brain, Hash, DollarSign } from 'lucide-react';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-14 pb-4 px-4 overflow-hidden">
       {/* Animated Mesh Gradient Background */}
@@ -45,13 +48,21 @@ const Hero = () => {
             <div
               className="relative glass-card rounded-[1.5rem] p-1.5 shadow-2xl max-w-[160px] overflow-hidden"
             >
+              {/* Loading Skeleton */}
+              {!videoLoaded && (
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 animate-pulse rounded-[1.25rem]" />
+              )}
+              
               <video
                 src="/assets/WhatsApp%20Video%202026-02-12%20at%2011.58.40.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="rounded-[1.25rem] w-full"
+                loading="lazy"
+                onLoadedData={() => setVideoLoaded(true)}
+                className={`rounded-[1.25rem] w-full transition-opacity duration-500 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
+                aria-label="VAMI app demonstration video"
               />
             </div>
           </div>

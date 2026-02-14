@@ -1,23 +1,26 @@
 # VAMI Website
 
-Eine moderne, animierte Single-Page-Website für die VAMI Pushup-Tracking App.
+Eine moderne, vollständig optimierte Website für die VAMI Pushup-Tracking App mit React, Vite, Tailwind CSS und Framer Motion.
 
 ## 🚀 Technologie-Stack
 
-- **React** - UI-Framework
-- **Vite** - Build-Tool und Dev-Server
+- **React 19** - UI-Framework
+- **Vite 7** - Next-Gen Build-Tool
 - **Tailwind CSS** - Utility-First CSS Framework
 - **Framer Motion** - Animationen und Übergänge
+- **React Router** - Client-Side Routing
 - **Lucide React** - Icon-Bibliothek
 
-## 🎨 Features
+## ✨ Key Features
 
-- ✨ Moderne Glassmorphism-Effekte
-- 🎭 Flüssige Framer Motion Animationen
-- 📱 Vollständig responsive (Mobile-First)
-- 🌙 Dunkles Theme mit VAMI-Branding (Dunkelblau/Orange)
-- 🎯 Smooth Scrolling und Parallax-Effekte
-- 🔥 Optimierte Performance
+- 🎨 **Premium Glassmorphism**: Moderne UI mit Glas-Effekten
+- 🎭 **Flüssige Animationen**: Framer Motion für smooth Transitions
+- 📱 **Fully Responsive**: Mobile-First Design
+- 🌙 **Dark Theme**: VAMI-Branding (Slate/Orange)
+- ⚡ **Performance-Optimiert**: Lazy Loading, Code-Splitting
+- ♿ **Accessibility**: WCAG 2.1 Level AA konform
+- 🔒 **Security Headers**: CSP, HSTS, XSS-Protection
+- 🎯 **SEO-Optimiert**: Structured Data, Meta-Tags, Sitemap
 
 ## 🛠️ Entwicklung
 
@@ -30,21 +33,18 @@ npm install
 ### Dev-Server starten
 
 ```bash
-npm run dev
+npm run dev              # Start development server
+npm run preview          # Preview production build
 ```
 
-Die Website ist dann verfügbar unter: http://localhost:5173/
-
-### Build für Produktion
+### Build & Deployment
 
 ```bash
-npm run build
-```
-
-### Vorschau des Production Builds
-
-```bash
-npm run preview
+npm run build            # Production build
+npm run build:analyze    # Build with bundle analysis
+npm run lint             # Run ESLint
+npm run lint:fix         # Fix ESLint errors
+npm run clean            # Clean dist and cache
 ```
 
 ## 📁 Projektstruktur
@@ -52,68 +52,138 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── Navbar.jsx          # Fixierte Navigation mit Glassmorphism
-│   ├── Hero.jsx            # Startbereich mit Split-Screen Layout
-│   ├── Features.jsx        # Feature-Cards mit KI-Analyse Details
-│   ├── StatsShowcase.jsx   # Statistik-Visualisierung mit Parallax
-│   ├── DownloadCTA.jsx     # Call-to-Action Section
-│   └── Footer.jsx          # Footer mit Links
-├── assets/                 # Bilder und Medien
-├── App.jsx                 # Hauptlayout
-└── index.css               # Globale Styles + Tailwind
+│   ├── Layout/
+│   │   ├── Navbar.jsx          # Navigation mit Scroll-Effekt
+│   │   ├── Footer.jsx          # Footer mit Links
+│   │   └── SkipToContent.jsx   # Accessibility Link
+│   ├── Home/
+│   │   ├── Hero.jsx            # Hero mit Video
+│   │   ├── Features.jsx        # Feature-Grid
+│   │   ├── StatsShowcase.jsx   # Statistiken
+│   │   └── DownloadCTA.jsx     # Call-to-Action
+│   ├── ErrorBoundary.jsx       # Error Handling
+│   └── [Legal Pages]           # Privacy, Terms, Imprint
+├── utils/
+│   ├── helpers.js              # Utility Functions
+│   └── constants.js            # App Constants
+├── App.jsx                     # Router Setup
+└── index.css                   # Global Styles
+
+public/
+├── assets/                     # Images & Videos
+├── robots.txt                  # SEO Crawling
+├── sitemap.xml                 # SEO Sitemap
+└── _headers                    # Security Headers (Netlify)
 ```
 
-## 🎯 Nächste Schritte
+## 🎯 Optimierungen
 
-1. **App-Screenshots hinzufügen**: Platziere die App-Screenshots in `public/assets/` als:
-   - `app-screen-main.jpg` - Hauptansicht der App (für Hero Section)
-   - `app-screen-stats.jpg` - Analyse-Ansicht (für Stats Showcase)
+### Performance
+- ✅ Code-Splitting (React, Router, Animations getrennt)
+- ✅ Lazy Loading für Videos
+- ✅ Terser Minification
+- ✅ Tree-Shaking
+- ✅ Optimierte Bundle-Größe
 
-2. **Bilder in Components einbinden**: Update die Placeholder-Divs in:
-   - `Hero.jsx` (Zeile ~59)
-   - `StatsShowcase.jsx` (Zeile ~80)
+### SEO
+- ✅ Structured Data (JSON-LD)
+- ✅ Complete Meta Tags (OG, Twitter)
+- ✅ Canonical URLs
+- ✅ XML Sitemap
+- ✅ robots.txt
 
-3. **Links aktualisieren**: Setze die echten App Store Links in:
-   - `DownloadCTA.jsx`
-   - `Navbar.jsx`
+### Accessibility
+- ✅ Error Boundary
+- ✅ Skip-to-Content Link
+- ✅ ARIA Labels
+- ✅ Semantic HTML
+- ✅ Keyboard Navigation
 
-4. **Rechtliche Seiten**: Erstelle Datenschutz, Impressum und AGB Seiten
+### Security
+- ✅ Content Security Policy
+- ✅ XSS Protection
+- ✅ Clickjacking Protection
+- ✅ HSTS Headers
+- ✅ Secure External Links
+
+Siehe [OPTIMIZATIONS.md](OPTIMIZATIONS.md) für Details.
 
 ## 🎨 Farbschema
 
-- **Dunkelblau (Background)**: `#0F172A`
-- **Orange (Primary/Akzent)**: `#F97316`
-- **Sekundär**: `#334155`
-- **Glassmorphism**: `rgba(255, 255, 255, 0.1)`
+```css
+--vami-dark:      #0F172A  /* Background */
+--vami-primary:   #F97316  /* Orange Accent */
+--vami-secondary: #334155  /* Secondary */
+```
 
-## 📝 Anpassungen
+### Tailwind Custom Classes
 
-### Tailwind-Konfiguration
-
-Die VAMI-Farben und Custom-Animationen sind in [tailwind.config.js](tailwind.config.js) definiert.
-
-### Custom CSS Classes
-
-- `.glass-effect` - Glassmorphism-Effekt
-- `.text-gradient` - Orange Gradient für Text
+- `.glass-effect` - Standard Glassmorphism
+- `.glass-ultra` - Premium Glass
+- `.glass-card` - Card-Variante
+- `.text-gradient` - Orange Gradient Text
+- `.sr-only` - Screen Reader Only
 
 ## 🚢 Deployment
 
-### GitHub Pages (Empfohlen)
+### GitHub Pages
 
-Die Website wird automatisch via GitHub Actions deployed, wenn Änderungen auf den `V2` Branch gepusht werden.
+Siehe `.github/workflows/` für Actions-Setup.
 
-**Setup-Schritte:**
-1. Gehe zu den Repository-Einstellungen → Pages
-2. Wähle als Source: "GitHub Actions"
-3. Die Website wird automatisch unter `https://vam-it.github.io/vami-website/` verfügbar sein
+## 🧪 Testing
 
-Die Deployment-Konfiguration befindet sich in `.github/workflows/static.yml`.
+```bash
+# Lighthouse im Browser
+npm run build && npm run preview
+# Dann: Chrome DevTools → Lighthouse
 
-### Weitere Deployment-Optionen
+# Bundle-Größe analysieren
+npm run build
+ls -lh dist/assets/
+```
 
-- **Vercel**: `npm run build` → Vercel CLI
-- **Netlify**: Automatisches Deployment via Git
+### Empfohlene Tools
+- **Lighthouse**: Performance & SEO
+- **WAVE**: Accessibility Testing  
+- **WebPageTest**: Detaillierte Performance-Analyse
+
+## 📊 Expected Performance
+
+- Lighthouse Performance: **95+**
+- Lighthouse Accessibility: **100**
+- Lighthouse SEO: **100**
+- First Contentful Paint: **< 1.5s**
+- Time to Interactive: **< 3.0s**
+
+## 📝 Environment Variables
+
+```bash
+cp .env.example .env
+# Dann .env anpassen
+```
+
+Siehe [.env.example](.env.example) für alle Optionen.
+
+## 🔧 Configuration Files
+
+- `vite.config.js` - Build-Optimierung
+- `tailwind.config.js` - Design-System
+- `netlify.toml` - Netlify-Config
+- `eslint.config.js` - Code-Qualität
+
+## 📚 Ressourcen
+
+- [Component Documentation](CLAUDE.md)
+- [Optimization Details](OPTIMIZATIONS.md)
+- [Screenshot Guide](SCREENSHOTS-ANLEITUNG.md)
+
+## 🤝 Contributing
+
+1. Fork das Repository
+2. Erstelle einen Feature-Branch
+3. Commit deine Änderungen
+4. Push zum Branch
+5. Öffne einen Pull Request
 
 ## 📄 Lizenz
 

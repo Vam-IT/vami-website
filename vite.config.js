@@ -8,13 +8,7 @@ export default defineConfig({
   
   build: {
     // Optimierungen für Production Build
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Entfernt console.log in Production
-        drop_debugger: true,
-      },
-    },
+    minify: 'esbuild', // Schneller als terser, bereits in Vite enthalten
     rollupOptions: {
       output: {
         manualChunks: {

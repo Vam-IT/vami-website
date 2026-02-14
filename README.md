@@ -128,7 +128,48 @@ Siehe [OPTIMIZATIONS.md](OPTIMIZATIONS.md) für Details.
 
 ### GitHub Pages
 
-Siehe `.github/workflows/` für Actions-Setup.
+Die Website ist für GitHub Pages optimiert mit SPA-Routing-Support:
+
+**Automatisches Deployment:**
+- Push zum `V2` Branch triggert GitHub Actions
+- Build & Deploy erfolgt automatisch
+- Workflow-Konfiguration: `.github/workflows/static.yml`
+
+**SPA-Routing-Lösung:**
+- `404.html` fängt direkte Navigationen ab (z.B. `/privacy`)
+- Redirect-Script in `index.html` stellt die Route wieder her
+- Funktioniert perfekt mit React Router
+
+**Wichtig:** Bei Custom Domains (wie `vamiapp.com`) die `CNAME` Datei im `public/` Ordner nicht löschen!
+
+```bash
+# Manuelles Deployment (falls nötig)
+npm run build
+# Dann dist/ Ordner zu GitHub Pages deployen
+```
+
+### Netlify (Empfohlen für Production)
+
+```bash
+# Automatisch via Git oder:
+npm run build
+netlify deploy --prod
+```
+
+Konfiguration in [netlify.toml](netlify.toml) mit:
+- Optimierten Build-Settings
+- Security Headers (CSP, HSTS, etc.)
+- SPA-Redirect-Rules
+- Asset-Caching
+
+### Vercel
+
+```bash
+npm run build
+vercel --prod
+```
+
+Vercel unterstützt SPA-Routing automatisch - keine zusätzliche Konfiguration nötig.
 
 ## 🧪 Testing
 

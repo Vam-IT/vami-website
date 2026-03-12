@@ -46,7 +46,7 @@ const DownloadCTA = () => {
 
             <div className="flex flex-col gap-4 justify-center items-center mb-6 md:mb-8 px-4 max-w-md mx-auto">
               <motion.a
-                href="https://apps.apple.com/app/vami"
+                href="https://apps.apple.com/us/app/vami-push-ups/id6758764261"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="w-full group bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-2xl font-medium text-base transition-all shadow-2xl flex items-center justify-center gap-3 touch-manipulation border border-white/10"

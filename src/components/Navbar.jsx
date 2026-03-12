@@ -43,7 +43,7 @@ const Navbar = () => {
 
           {/* App Store Button */}
           <motion.a
-            href="https://apps.apple.com/app/vami"
+            href="https://apps.apple.com/us/app/vami-push-ups/id6758764261"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.4 }}

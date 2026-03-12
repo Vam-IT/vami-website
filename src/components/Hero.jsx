@@ -101,7 +101,7 @@ const Hero = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
         >
           <motion.a
-            href="https://apps.apple.com/app/vami"
+            href="https://apps.apple.com/us/app/vami-push-ups/id6758764261"
             whileTap={{ scale: 0.97 }}
             className="group bg-black hover:bg-gray-900 text-white px-6 py-3.5 rounded-2xl transition-all shadow-2xl flex items-center justify-center gap-3 touch-manipulation border border-white/10"
             style={{ WebkitTapHighlightColor: 'transparent' }}

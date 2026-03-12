@@ -9,7 +9,7 @@ export const APP_DESCRIPTION = 'AI-Powered Push-up Training';
 export const APP_VERSION = '1.0.0';
 
 // URLs
-export const APP_STORE_URL = 'https://apps.apple.com/app/vami';
+export const APP_STORE_URL = 'https://apps.apple.com/us/app/vami-push-ups/id6758764261';
 export const WEBSITE_URL = 'https://vami.app';
 export const SUPPORT_EMAIL = 'support@vami.app';
 

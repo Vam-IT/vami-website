@@ -16,16 +16,24 @@ const Imprint = () => {
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">Angaben gemäß § 5 TMG</h2>
             <p className="leading-relaxed">
-              Mauritz Langer<br />
-              Münchener Str. 1<br />
-              46414 Rhede
+              VAMIT UG (haftungsbeschränkt)<br />
+              Petersfeldstraße 16<br />
+              46395 Bocholt
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-3">Handelsregister</h2>
+            <p className="leading-relaxed">
+              Handelsregister B des Amtsgerichts Coesfeld<br />
+              HRB 23796
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-3">Vertreten durch</h2>
             <p className="leading-relaxed">
-              Mauritz Langer
+              Geschäftsführer: Kolev, Veselin
             </p>
           </section>
 

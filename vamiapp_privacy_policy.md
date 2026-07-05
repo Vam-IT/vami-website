@@ -52,7 +52,33 @@ You can withdraw your tracking consent at any time in iOS System Settings under 
 
 ---
 
-## 5. Local Data Storage (UserDefaults)
+## 5. Health Data (Apple HealthKit)
+
+The App integrates with Apple HealthKit to store your workout activity and to power the app-unlock reward feature.
+
+Purpose: We write your push-up workouts (repetitions, duration, calories) to HealthKit so they appear in the Apple Health app. We also read relevant HealthKit data to automatically unlock apps you have blocked as a training incentive.
+
+On-Device Only: All HealthKit data is read and written exclusively on your device via Apple's HealthKit framework. It is never transmitted to our servers, to PostHog, or to any other third party.
+
+No Advertising Use: In accordance with Apple's Developer Program guidelines, HealthKit data is never used for advertising, marketing, or shared with data brokers.
+
+Deletion: You can revoke HealthKit access at any time in iOS Settings → Privacy & Security → Health. Uninstalling the App does not delete data already written to Apple Health; this must be managed separately within the Health app.
+
+Legal Basis: Performance of a contract (Art. 6 (1) (b) GDPR) and your explicit consent when granting HealthKit permissions (Art. 6 (1) (a) GDPR).
+
+## 6. Family Controls / Screen Time (App Blocking Feature)
+
+The App uses Apple's Family Controls framework (a restricted Apple API) to let you block distracting apps and "earn back" access to them by completing push-up workouts.
+
+Purpose: Gamification — motivating consistent training by linking workout completion to temporary app access.
+
+On-Device Only: All information about which apps you choose to block, for how long, and when they are unlocked is stored exclusively on your device (in a local App Group). This information never leaves your device and is never transmitted to our servers or any third party.
+
+No Usage Monitoring: We do not receive any data about your general app usage, screen time, or which third-party apps are installed on your device.
+
+Legal Basis: Your explicit consent when enabling the Screen Time feature (Art. 6 (1) (a) GDPR).
+
+## 7. Local Data Storage (UserDefaults)
 
 Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
 
@@ -61,17 +87,18 @@ Your workout statistics (e.g., push-up counts, personal records, goals) are stor
 
 ---
 
-## 6. Data We Do Not Collect
+## 8. Data We Do Not Collect
 
-We do not collect:
-- Names, email addresses, or any directly identifying personal information
+- Names, email addresses, or any other directly identifying personal information
 - Payment information (all purchases are handled exclusively by Apple)
 - Location data
-- Contact lists or any other device data beyond camera access for push-up counting
+- Contact lists
+- Video or images from the camera (processed on-device only, see Section 3)
+- Health & fitness data or Screen Time/app-blocking data (processed on-device only, see Sections 5 and 6) — we never receive this data on our servers, even though the App requests permission to access it locally on your device
 
 ---
 
-## 7. Your Rights
+## 9. Your Rights
 
 You have the following rights regarding your personal data:
 
@@ -85,7 +112,7 @@ To exercise your rights, please contact us at: info@vam-it.com
 
 ---
 
-## 8. Data Security
+## 10. Data Security
 
 We follow a **Privacy by Design** approach:
 
@@ -95,13 +122,13 @@ We follow a **Privacy by Design** approach:
 
 ---
 
-## 9. Children's Privacy
+## 11. Children's Privacy
 
 This App is not directed at children under the age of 13. We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us at info@vam-it.com and we will delete it promptly.
 
 ---
 
-## 10. Changes to This Privacy Policy
+## 12. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time to reflect changes in the App or applicable law. The current version is always available at vamiapp.com/privacy. Material changes will be communicated via an in-app notice where required by law.
 

@@ -109,7 +109,43 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">5. Health Data (Apple HealthKit)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">5. In-App Purchases (RevenueCat)</h2>
+            <p className="leading-relaxed mb-3">
+              We use RevenueCat to manage subscriptions and in-app purchases.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Data Processed:</span> Purchase history, subscription status, and a randomly generated anonymous App User ID. This ID is not linked to your name, email address, or Apple ID.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Payment Processing:</span> All actual payment details (credit card, Apple ID billing information) are processed exclusively by Apple and are never accessible to us or to RevenueCat.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Purpose:</span> Verifying purchases, managing subscription status, and unlocking premium features.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Data Sharing:</span> RevenueCat acts as our data processor for this purpose and does not use this data for advertising or share it with third parties for marketing purposes.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Legal Basis:</span> Performance of a contract (Art. 6 (1) (b) GDPR).
+              </li>
+            </ul>
+            <p className="leading-relaxed mt-3">
+              Further information:{' '}
+              <a
+                href="https://www.revenuecat.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-vami-primary hover:text-orange-400 transition-colors"
+              >
+                RevenueCat Privacy Policy
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Health Data (Apple HealthKit)</h2>
             <p className="leading-relaxed mb-3">
               The App integrates with Apple HealthKit to store your workout activity and to power the app-unlock reward feature.
             </p>
@@ -133,7 +169,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">6. Family Controls / Screen Time (App Blocking Feature)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Family Controls / Screen Time (App Blocking Feature)</h2>
             <p className="leading-relaxed mb-3">
               The App uses Apple&apos;s Family Controls framework (a restricted Apple API) to let you block distracting apps and &quot;earn back&quot; access to them by completing push-up workouts.
             </p>
@@ -154,7 +190,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. Local Data Storage (UserDefaults)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">8. Local Data Storage (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
               Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
             </p>
@@ -165,7 +201,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">8. Data We Do Not Collect</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">9. Data We Do Not Collect</h2>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">Names, email addresses, or any other directly identifying personal information</li>
               <li className="leading-relaxed">Payment information (all purchases are handled exclusively by Apple)</li>
@@ -177,7 +213,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">9. Your Rights</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">10. Your Rights</h2>
             <p className="leading-relaxed mb-3">You have the following rights regarding your personal data:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
@@ -209,7 +245,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">10. Data Security</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">11. Data Security</h2>
             <p className="leading-relaxed mb-3">We follow a <span className="text-vami-primary font-semibold">Privacy by Design</span> approach:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">The most sensitive data (camera feed) is processed exclusively on-device and never transmitted, making unauthorised server-side access technically impossible.</li>
@@ -219,7 +255,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">11. Children&apos;s Privacy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">12. Children&apos;s Privacy</h2>
             <p className="leading-relaxed">
               This App is not directed at children under the age of 13. We do not knowingly collect
               personal data from children. If you believe a child has provided us with personal data,
@@ -228,7 +264,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">12. Changes to This Privacy Policy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">13. Changes to This Privacy Policy</h2>
             <p className="leading-relaxed">
               We may update this Privacy Policy from time to time to reflect changes in the App or
               applicable law. The current version is always available at{' '}
@@ -353,7 +389,43 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">5. Gesundheitsdaten (Apple HealthKit)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">5. In-App-Käufe (RevenueCat)</h2>
+            <p className="leading-relaxed mb-3">
+              Wir nutzen RevenueCat zur Verwaltung von Abonnements und In-App-Käufen.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Verarbeitete Daten:</span> Kaufhistorie, Abonnementstatus sowie eine zufällig generierte, anonyme App-User-ID. Diese ID ist nicht mit deinem Namen, deiner E-Mail-Adresse oder deiner Apple-ID verknüpft.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Zahlungsabwicklung:</span> Sämtliche eigentlichen Zahlungsdaten (Kreditkarte, Apple-ID-Abrechnungsinformationen) werden ausschließlich von Apple verarbeitet und sind weder für uns noch für RevenueCat einsehbar.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Zweck:</span> Verifizierung von Käufen, Verwaltung des Abonnementstatus und Freischaltung von Premium-Funktionen.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Datenweitergabe:</span> RevenueCat fungiert für diesen Zweck als unser Auftragsverarbeiter und nutzt diese Daten nicht für Werbezwecke oder gibt sie zu Marketingzwecken an Dritte weiter.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Rechtsgrundlage:</span> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).
+              </li>
+            </ul>
+            <p className="leading-relaxed mt-3">
+              Weitere Informationen:{' '}
+              <a
+                href="https://www.revenuecat.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-vami-primary hover:text-orange-400 transition-colors"
+              >
+                RevenueCat Datenschutzerklärung
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Gesundheitsdaten (Apple HealthKit)</h2>
             <p className="leading-relaxed mb-3">
               Die App ist mit Apple HealthKit verbunden, um deine Trainingsaktivität zu speichern und die App-Freischaltungs-Funktion als Belohnung zu ermöglichen.
             </p>
@@ -377,7 +449,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">6. Family Controls / Screen Time (App-Blockierungs-Funktion)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Family Controls / Screen Time (App-Blockierungs-Funktion)</h2>
             <p className="leading-relaxed mb-3">
               Die App nutzt Apples Family-Controls-Framework (eine geschützte Apple-API), damit du ablenkende Apps blockieren und dir den Zugriff darauf durch absolvierte Liegestütz-Workouts &quot;zurückverdienen&quot; kannst.
             </p>
@@ -398,7 +470,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. Lokale Datenspeicherung (UserDefaults)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">8. Lokale Datenspeicherung (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
               Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
             </p>
@@ -409,7 +481,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">8. Daten, die wir nicht erheben</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">9. Daten, die wir nicht erheben</h2>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">Namen, E-Mail-Adressen oder sonstige direkt identifizierende Daten</li>
               <li className="leading-relaxed">Zahlungsinformationen (alle Käufe werden ausschließlich über Apple abgewickelt)</li>
@@ -421,7 +493,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">9. Deine Rechte</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">10. Deine Rechte</h2>
             <p className="leading-relaxed mb-3">Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
@@ -453,7 +525,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">10. Datensicherheit</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">11. Datensicherheit</h2>
             <p className="leading-relaxed mb-3">
               Wir verfolgen einen <span className="text-vami-primary font-semibold">Privacy-by-Design</span>-Ansatz:
             </p>
@@ -465,7 +537,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">11. Kinder</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">12. Kinder</h2>
             <p className="leading-relaxed">
               Diese App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine
               personenbezogenen Daten von Kindern. Solltest du glauben, dass uns ein Kind
@@ -475,7 +547,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">12. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">13. Aktualität und Änderung dieser Datenschutzerklärung</h2>
             <p className="leading-relaxed">
               Wir können diese Datenschutzerklärung bei Änderungen der App oder der rechtlichen
               Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter{' '}

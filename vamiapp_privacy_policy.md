@@ -52,7 +52,21 @@ You can withdraw your tracking consent at any time in iOS System Settings under 
 
 ---
 
-## 5. Health Data (Apple HealthKit)
+## 5. In-App Purchases (RevenueCat)
+
+We use RevenueCat to manage subscriptions and in-app purchases.
+
+- **Data Processed:** Purchase history, subscription status, and a randomly generated anonymous App User ID. This ID is not linked to your name, email address, or Apple ID.
+- **Payment Processing:** All actual payment details (credit card, Apple ID billing information) are processed exclusively by Apple and are never accessible to us or to RevenueCat.
+- **Purpose:** Verifying purchases, managing subscription status, and unlocking premium features.
+- **Data Sharing:** RevenueCat acts as our data processor for this purpose and does not use this data for advertising or share it with third parties for marketing purposes.
+- **Legal Basis:** Performance of a contract (Art. 6 (1) (b) GDPR).
+
+Further information: [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy)
+
+---
+
+## 6. Health Data (Apple HealthKit)
 
 The App integrates with Apple HealthKit to store your workout activity and to power the app-unlock reward feature.
 
@@ -66,7 +80,7 @@ Deletion: You can revoke HealthKit access at any time in iOS Settings → Privac
 
 Legal Basis: Performance of a contract (Art. 6 (1) (b) GDPR) and your explicit consent when granting HealthKit permissions (Art. 6 (1) (a) GDPR).
 
-## 6. Family Controls / Screen Time (App Blocking Feature)
+## 7. Family Controls / Screen Time (App Blocking Feature)
 
 The App uses Apple's Family Controls framework (a restricted Apple API) to let you block distracting apps and "earn back" access to them by completing push-up workouts.
 
@@ -78,7 +92,7 @@ No Usage Monitoring: We do not receive any data about your general app usage, sc
 
 Legal Basis: Your explicit consent when enabling the Screen Time feature (Art. 6 (1) (a) GDPR).
 
-## 7. Local Data Storage (UserDefaults)
+## 8. Local Data Storage (UserDefaults)
 
 Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
 
@@ -87,7 +101,7 @@ Your workout statistics (e.g., push-up counts, personal records, goals) are stor
 
 ---
 
-## 8. Data We Do Not Collect
+## 9. Data We Do Not Collect
 
 - Names, email addresses, or any other directly identifying personal information
 - Payment information (all purchases are handled exclusively by Apple)
@@ -98,7 +112,7 @@ Your workout statistics (e.g., push-up counts, personal records, goals) are stor
 
 ---
 
-## 9. Your Rights
+## 10. Your Rights
 
 You have the following rights regarding your personal data:
 
@@ -112,7 +126,7 @@ To exercise your rights, please contact us at: info@vam-it.com
 
 ---
 
-## 10. Data Security
+## 11. Data Security
 
 We follow a **Privacy by Design** approach:
 
@@ -122,13 +136,13 @@ We follow a **Privacy by Design** approach:
 
 ---
 
-## 11. Children's Privacy
+## 12. Children's Privacy
 
 This App is not directed at children under the age of 13. We do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us at info@vam-it.com and we will delete it promptly.
 
 ---
 
-## 12. Changes to This Privacy Policy
+## 13. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time to reflect changes in the App or applicable law. The current version is always available at vamiapp.com/privacy. Material changes will be communicated via an in-app notice where required by law.
 

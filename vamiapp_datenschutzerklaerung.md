@@ -53,7 +53,21 @@ Du kannst deine Tracking-Einwilligung jederzeit in den iOS-Systemeinstellungen u
 
 ---
 
-## 5. Gesundheitsdaten (Apple HealthKit)
+## 5. In-App-Käufe (RevenueCat)
+
+Wir nutzen RevenueCat zur Verwaltung von Abonnements und In-App-Käufen.
+
+- **Verarbeitete Daten:** Kaufhistorie, Abonnementstatus sowie eine zufällig generierte, anonyme App-User-ID. Diese ID ist nicht mit deinem Namen, deiner E-Mail-Adresse oder deiner Apple-ID verknüpft.
+- **Zahlungsabwicklung:** Sämtliche eigentlichen Zahlungsdaten (Kreditkarte, Apple-ID-Abrechnungsinformationen) werden ausschließlich von Apple verarbeitet und sind weder für uns noch für RevenueCat einsehbar.
+- **Zweck:** Verifizierung von Käufen, Verwaltung des Abonnementstatus und Freischaltung von Premium-Funktionen.
+- **Datenweitergabe:** RevenueCat fungiert für diesen Zweck als unser Auftragsverarbeiter und nutzt diese Daten nicht für Werbezwecke oder gibt sie zu Marketingzwecken an Dritte weiter.
+- **Rechtsgrundlage:** Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).
+
+Weitere Informationen: [RevenueCat Datenschutzerklärung](https://www.revenuecat.com/privacy)
+
+---
+
+## 6. Gesundheitsdaten (Apple HealthKit)
 
 Die App ist mit Apple HealthKit verbunden, um deine Trainingsaktivität zu speichern und die App-Freischaltungs-Funktion als Belohnung zu ermöglichen.
 
@@ -67,7 +81,7 @@ Löschung: Du kannst den HealthKit-Zugriff jederzeit in den iOS-Einstellungen un
 
 Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) sowie deine explizite Einwilligung bei Erteilung der HealthKit-Berechtigung (Art. 6 Abs. 1 lit. a DSGVO).
 
-## 6. Family Controls / Screen Time (App-Blockierungs-Funktion)
+## 7. Family Controls / Screen Time (App-Blockierungs-Funktion)
 
 Die App nutzt Apples Family-Controls-Framework (eine geschützte Apple-API), damit du ablenkende Apps blockieren und dir den Zugriff darauf durch absolvierte Liegestütz-Workouts "zurückverdienen" kannst.
 
@@ -79,7 +93,7 @@ Keine Nutzungsüberwachung: Wir erhalten keinerlei Daten über deine allgemeine 
 
 Rechtsgrundlage: Deine explizite Einwilligung bei Aktivierung der Screen-Time-Funktion (Art. 6 Abs. 1 lit. a DSGVO).
 
-## 7. Lokale Datenspeicherung (UserDefaults)
+## 8. Lokale Datenspeicherung (UserDefaults)
 
 Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
 
@@ -88,7 +102,7 @@ Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele
 
 ---
 
-## 8. Daten, die wir nicht erheben
+## 9. Daten, die wir nicht erheben
 
 - Namen, E-Mail-Adressen oder sonstige direkt identifizierende Daten
 - Zahlungsinformationen (alle Käufe werden ausschließlich über Apple abgewickelt)
@@ -99,7 +113,7 @@ Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele
 
 ---
 
-## 9. Deine Rechte
+## 10. Deine Rechte
 
 Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:
 
@@ -113,7 +127,7 @@ Zur Ausübung deiner Rechte wende dich bitte an: info@vam-it.com
 
 ---
 
-## 10. Datensicherheit
+## 11. Datensicherheit
 
 Wir verfolgen einen **Privacy-by-Design**-Ansatz:
 
@@ -123,13 +137,13 @@ Wir verfolgen einen **Privacy-by-Design**-Ansatz:
 
 ---
 
-## 11. Kinder
+## 12. Kinder
 
 Diese App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Solltest du glauben, dass uns ein Kind personenbezogene Daten übermittelt hat, wende dich bitte an info@vam-it.com – wir werden die Daten umgehend löschen.
 
 ---
 
-## 12. Aktualität und Änderung dieser Datenschutzerklärung
+## 13. Aktualität und Änderung dieser Datenschutzerklärung
 
 Wir können diese Datenschutzerklärung bei Änderungen der App oder der rechtlichen Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter vamiapp.com/privacy abrufbar. Wesentliche Änderungen werden, soweit gesetzlich erforderlich, durch einen In-App-Hinweis kommuniziert.
 

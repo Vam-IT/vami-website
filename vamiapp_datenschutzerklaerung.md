@@ -53,7 +53,33 @@ Du kannst deine Tracking-Einwilligung jederzeit in den iOS-Systemeinstellungen u
 
 ---
 
-## 5. Lokale Datenspeicherung (UserDefaults)
+## 5. Gesundheitsdaten (Apple HealthKit)
+
+Die App ist mit Apple HealthKit verbunden, um deine Trainingsaktivität zu speichern und die App-Freischaltungs-Funktion als Belohnung zu ermöglichen.
+
+Zweck: Wir schreiben deine Liegestütz-Workouts (Wiederholungen, Dauer, Kalorien) in HealthKit, damit sie in der Apple Health App erscheinen. Zudem lesen wir relevante HealthKit-Daten, um von dir blockierte Apps als Trainingsanreiz automatisch freizuschalten.
+
+Ausschließlich On-Device: Sämtliche HealthKit-Daten werden ausschließlich lokal auf deinem Gerät über Apples HealthKit-Framework gelesen und geschrieben. Sie werden niemals an unsere Server, an PostHog oder an sonstige Dritte übertragen.
+
+Keine Werbenutzung: Gemäß den Richtlinien des Apple Developer Programs werden HealthKit-Daten niemals für Werbung, Marketing oder die Weitergabe an Datenhändler genutzt.
+
+Löschung: Du kannst den HealthKit-Zugriff jederzeit in den iOS-Einstellungen unter Datenschutz & Sicherheit → Health widerrufen. Die Deinstallation der App löscht keine bereits in Apple Health gespeicherten Daten; dies muss separat in der Health-App verwaltet werden.
+
+Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) sowie deine explizite Einwilligung bei Erteilung der HealthKit-Berechtigung (Art. 6 Abs. 1 lit. a DSGVO).
+
+## 6. Family Controls / Screen Time (App-Blockierungs-Funktion)
+
+Die App nutzt Apples Family-Controls-Framework (eine geschützte Apple-API), damit du ablenkende Apps blockieren und dir den Zugriff darauf durch absolvierte Liegestütz-Workouts "zurückverdienen" kannst.
+
+Zweck: Gamification — Motivation zu regelmäßigem Training durch Verknüpfung von Trainingserfolg mit temporärem App-Zugriff.
+
+Ausschließlich On-Device: Sämtliche Informationen darüber, welche Apps du blockierst, für wie lange und wann sie freigeschaltet werden, werden ausschließlich lokal auf deinem Gerät gespeichert (in einer lokalen App Group). Diese Informationen verlassen dein Gerät nicht und werden nicht an unsere Server oder Dritte übertragen.
+
+Keine Nutzungsüberwachung: Wir erhalten keinerlei Daten über deine allgemeine App-Nutzung, Bildschirmzeit oder darüber, welche Drittanbieter-Apps auf deinem Gerät installiert sind.
+
+Rechtsgrundlage: Deine explizite Einwilligung bei Aktivierung der Screen-Time-Funktion (Art. 6 Abs. 1 lit. a DSGVO).
+
+## 7. Lokale Datenspeicherung (UserDefaults)
 
 Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
 
@@ -62,17 +88,18 @@ Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele
 
 ---
 
-## 6. Daten, die wir nicht erheben
+## 8. Daten, die wir nicht erheben
 
-Wir erheben nicht:
 - Namen, E-Mail-Adressen oder sonstige direkt identifizierende Daten
 - Zahlungsinformationen (alle Käufe werden ausschließlich über Apple abgewickelt)
 - Standortdaten
-- Kontaktlisten oder sonstige Gerätedaten über den Kamerazugriff hinaus
+- Kontaktlisten
+- Video- oder Bilddaten der Kamera (ausschließlich lokal verarbeitet, siehe Abschnitt 3)
+- Gesundheits- und Fitnessdaten sowie Screen-Time-/App-Blockierungsdaten (ausschließlich lokal verarbeitet, siehe Abschnitte 5 und 6) — diese Daten erreichen unsere Server zu keinem Zeitpunkt, auch wenn die App um lokale Zugriffsberechtigung dafür bittet
 
 ---
 
-## 7. Deine Rechte
+## 9. Deine Rechte
 
 Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:
 
@@ -86,7 +113,7 @@ Zur Ausübung deiner Rechte wende dich bitte an: info@vam-it.com
 
 ---
 
-## 8. Datensicherheit
+## 10. Datensicherheit
 
 Wir verfolgen einen **Privacy-by-Design**-Ansatz:
 
@@ -96,13 +123,13 @@ Wir verfolgen einen **Privacy-by-Design**-Ansatz:
 
 ---
 
-## 9. Kinder
+## 11. Kinder
 
 Diese App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Solltest du glauben, dass uns ein Kind personenbezogene Daten übermittelt hat, wende dich bitte an info@vam-it.com – wir werden die Daten umgehend löschen.
 
 ---
 
-## 10. Aktualität und Änderung dieser Datenschutzerklärung
+## 12. Aktualität und Änderung dieser Datenschutzerklärung
 
 Wir können diese Datenschutzerklärung bei Änderungen der App oder der rechtlichen Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter vamiapp.com/privacy abrufbar. Wesentliche Änderungen werden, soweit gesetzlich erforderlich, durch einen In-App-Hinweis kommuniziert.
 

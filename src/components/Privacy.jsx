@@ -109,7 +109,52 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">5. Local Data Storage (UserDefaults)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">5. Health Data (Apple HealthKit)</h2>
+            <p className="leading-relaxed mb-3">
+              The App integrates with Apple HealthKit to store your workout activity and to power the app-unlock reward feature.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Purpose:</span> We write your push-up workouts (repetitions, duration, calories) to HealthKit so they appear in the Apple Health app. We also read relevant HealthKit data to automatically unlock apps you have blocked as a training incentive.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">On-Device Only:</span> All HealthKit data is read and written exclusively on your device via Apple&apos;s HealthKit framework. It is never transmitted to our servers, to PostHog, or to any other third party.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">No Advertising Use:</span> In accordance with Apple&apos;s Developer Program guidelines, HealthKit data is never used for advertising, marketing, or shared with data brokers.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Deletion:</span> You can revoke HealthKit access at any time in iOS Settings → Privacy & Security → Health. Uninstalling the App does not delete data already written to Apple Health; this must be managed separately within the Health app.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Legal Basis:</span> Performance of a contract (Art. 6 (1) (b) GDPR) and your explicit consent when granting HealthKit permissions (Art. 6 (1) (a) GDPR).
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Family Controls / Screen Time (App Blocking Feature)</h2>
+            <p className="leading-relaxed mb-3">
+              The App uses Apple&apos;s Family Controls framework (a restricted Apple API) to let you block distracting apps and &quot;earn back&quot; access to them by completing push-up workouts.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Purpose:</span> Gamification — motivating consistent training by linking workout completion to temporary app access.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">On-Device Only:</span> All information about which apps you choose to block, for how long, and when they are unlocked is stored exclusively on your device (in a local App Group). This information never leaves your device and is never transmitted to our servers or any third party.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">No Usage Monitoring:</span> We do not receive any data about your general app usage, screen time, or which third-party apps are installed on your device.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Legal Basis:</span> Your explicit consent when enabling the Screen Time feature (Art. 6 (1) (a) GDPR).
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Local Data Storage (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
               Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
             </p>
@@ -120,17 +165,19 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">6. Data We Do Not Collect</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">8. Data We Do Not Collect</h2>
             <ul className="space-y-2 ml-4">
-              <li className="leading-relaxed">Names, email addresses, or any directly identifying personal information</li>
+              <li className="leading-relaxed">Names, email addresses, or any other directly identifying personal information</li>
               <li className="leading-relaxed">Payment information (all purchases are handled exclusively by Apple)</li>
               <li className="leading-relaxed">Location data</li>
-              <li className="leading-relaxed">Contact lists or any other device data beyond camera access for push-up counting</li>
+              <li className="leading-relaxed">Contact lists</li>
+              <li className="leading-relaxed">Video or images from the camera (processed on-device only, see Section 3)</li>
+              <li className="leading-relaxed">Health & fitness data or Screen Time/app-blocking data (processed on-device only, see Sections 5 and 6) — we never receive this data on our servers, even though the App requests permission to access it locally on your device</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. Your Rights</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">9. Your Rights</h2>
             <p className="leading-relaxed mb-3">You have the following rights regarding your personal data:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
@@ -162,7 +209,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">8. Data Security</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">10. Data Security</h2>
             <p className="leading-relaxed mb-3">We follow a <span className="text-vami-primary font-semibold">Privacy by Design</span> approach:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">The most sensitive data (camera feed) is processed exclusively on-device and never transmitted, making unauthorised server-side access technically impossible.</li>
@@ -172,7 +219,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">9. Children&apos;s Privacy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">11. Children&apos;s Privacy</h2>
             <p className="leading-relaxed">
               This App is not directed at children under the age of 13. We do not knowingly collect
               personal data from children. If you believe a child has provided us with personal data,
@@ -181,7 +228,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">10. Changes to This Privacy Policy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">12. Changes to This Privacy Policy</h2>
             <p className="leading-relaxed">
               We may update this Privacy Policy from time to time to reflect changes in the App or
               applicable law. The current version is always available at{' '}
@@ -306,7 +353,52 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">5. Lokale Datenspeicherung (UserDefaults)</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">5. Gesundheitsdaten (Apple HealthKit)</h2>
+            <p className="leading-relaxed mb-3">
+              Die App ist mit Apple HealthKit verbunden, um deine Trainingsaktivität zu speichern und die App-Freischaltungs-Funktion als Belohnung zu ermöglichen.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Zweck:</span> Wir schreiben deine Liegestütz-Workouts (Wiederholungen, Dauer, Kalorien) in HealthKit, damit sie in der Apple Health App erscheinen. Zudem lesen wir relevante HealthKit-Daten, um von dir blockierte Apps als Trainingsanreiz automatisch freizuschalten.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Ausschließlich On-Device:</span> Sämtliche HealthKit-Daten werden ausschließlich lokal auf deinem Gerät über Apples HealthKit-Framework gelesen und geschrieben. Sie werden niemals an unsere Server, an PostHog oder an sonstige Dritte übertragen.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Keine Werbenutzung:</span> Gemäß den Richtlinien des Apple Developer Programs werden HealthKit-Daten niemals für Werbung, Marketing oder die Weitergabe an Datenhändler genutzt.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Löschung:</span> Du kannst den HealthKit-Zugriff jederzeit in den iOS-Einstellungen unter Datenschutz &amp; Sicherheit → Health widerrufen. Die Deinstallation der App löscht keine bereits in Apple Health gespeicherten Daten; dies muss separat in der Health-App verwaltet werden.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Rechtsgrundlage:</span> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) sowie deine explizite Einwilligung bei Erteilung der HealthKit-Berechtigung (Art. 6 Abs. 1 lit. a DSGVO).
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Family Controls / Screen Time (App-Blockierungs-Funktion)</h2>
+            <p className="leading-relaxed mb-3">
+              Die App nutzt Apples Family-Controls-Framework (eine geschützte Apple-API), damit du ablenkende Apps blockieren und dir den Zugriff darauf durch absolvierte Liegestütz-Workouts &quot;zurückverdienen&quot; kannst.
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Zweck:</span> Gamification — Motivation zu regelmäßigem Training durch Verknüpfung von Trainingserfolg mit temporärem App-Zugriff.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Ausschließlich On-Device:</span> Sämtliche Informationen darüber, welche Apps du blockierst, für wie lange und wann sie freigeschaltet werden, werden ausschließlich lokal auf deinem Gerät gespeichert (in einer lokalen App Group). Diese Informationen verlassen dein Gerät nicht und werden nicht an unsere Server oder Dritte übertragen.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Keine Nutzungsüberwachung:</span> Wir erhalten keinerlei Daten über deine allgemeine App-Nutzung, Bildschirmzeit oder darüber, welche Drittanbieter-Apps auf deinem Gerät installiert sind.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Rechtsgrundlage:</span> Deine explizite Einwilligung bei Aktivierung der Screen-Time-Funktion (Art. 6 Abs. 1 lit. a DSGVO).
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Lokale Datenspeicherung (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
               Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
             </p>
@@ -317,17 +409,19 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">6. Daten, die wir nicht erheben</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">8. Daten, die wir nicht erheben</h2>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">Namen, E-Mail-Adressen oder sonstige direkt identifizierende Daten</li>
               <li className="leading-relaxed">Zahlungsinformationen (alle Käufe werden ausschließlich über Apple abgewickelt)</li>
               <li className="leading-relaxed">Standortdaten</li>
-              <li className="leading-relaxed">Kontaktlisten oder sonstige Gerätedaten über den Kamerazugriff hinaus</li>
+              <li className="leading-relaxed">Kontaktlisten</li>
+              <li className="leading-relaxed">Video- oder Bilddaten der Kamera (ausschließlich lokal verarbeitet, siehe Abschnitt 3)</li>
+              <li className="leading-relaxed">Gesundheits- und Fitnessdaten sowie Screen-Time-/App-Blockierungsdaten (ausschließlich lokal verarbeitet, siehe Abschnitte 5 und 6) — diese Daten erreichen unsere Server zu keinem Zeitpunkt, auch wenn die App um lokale Zugriffsberechtigung dafür bittet</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. Deine Rechte</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">9. Deine Rechte</h2>
             <p className="leading-relaxed mb-3">Du hast gegenüber uns folgende Rechte hinsichtlich deiner personenbezogenen Daten:</p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
@@ -359,7 +453,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">8. Datensicherheit</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">10. Datensicherheit</h2>
             <p className="leading-relaxed mb-3">
               Wir verfolgen einen <span className="text-vami-primary font-semibold">Privacy-by-Design</span>-Ansatz:
             </p>
@@ -371,7 +465,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">9. Kinder</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">11. Kinder</h2>
             <p className="leading-relaxed">
               Diese App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine
               personenbezogenen Daten von Kindern. Solltest du glauben, dass uns ein Kind
@@ -381,7 +475,7 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">10. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">12. Aktualität und Änderung dieser Datenschutzerklärung</h2>
             <p className="leading-relaxed">
               Wir können diese Datenschutzerklärung bei Änderungen der App oder der rechtlichen
               Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter{' '}

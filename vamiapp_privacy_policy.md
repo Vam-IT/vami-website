@@ -1,6 +1,6 @@
 # Privacy Policy – VAMI Push-Ups
 
-**Last Updated: June 2026**
+**Last Updated: July 2026**
 
 Your privacy is our top priority. This Privacy Policy explains how the App VAMI Push-Ups (hereinafter "the App") processes data and what your rights are.
 
@@ -40,15 +40,21 @@ The core feature of the App is counting your push-ups using your device's camera
 
 ## 4. Analytics & App Improvement (PostHog)
 
-We use PostHog to monitor app stability and improve features.
+We use PostHog to monitor app stability and improve features. You have full control over this via a dedicated toggle ("Share anonymous usage data") in the App's Settings, in addition to Apple's App Tracking Transparency (ATT) prompt.
 
 - **Service Provider:** PostHog Inc., EU Cloud (server location: Frankfurt, Germany). Data remains within the European Economic Area (EEA) at all times. No analytics data is transferred to the United States.
-- **If Tracking is Allowed (ATT):** If you grant permission via the App Tracking Transparency (ATT) prompt, we collect usage statistics (e.g., features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
-- **If Tracking is Denied:** The App uses daily rotating anonymous IDs. It is technically impossible for us to identify you or link your behaviour across multiple days.
-- **Retention:** Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
-- **Legal Basis:** Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics.
 
-You can withdraw your tracking consent at any time in iOS System Settings under **Privacy & Security → Tracking**.
+- **Toggle disabled (opted out):** If you disable "Share anonymous usage data" in Settings, PostHog is fully deactivated. No data leaves your device.
+
+- **Toggle enabled, ATT denied or not granted:** The App uses daily rotating anonymous IDs, and IP addresses are masked/discarded. It is technically impossible for us to identify you or link your behaviour across multiple days.
+
+- **Toggle enabled and ATT authorised:** We collect usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
+
+**Retention:** Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
+
+**Legal Basis:** Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics collected while the in-app toggle is enabled.
+
+You can withdraw your consent at any time via the toggle in the App's Settings, or via iOS System Settings under **Privacy & Security → Tracking**.
 
 ---
 
@@ -94,7 +100,7 @@ Legal Basis: Your explicit consent when enabling the Screen Time feature (Art. 6
 
 ## 8. Local Data Storage (UserDefaults)
 
-Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
+Your profile information (e.g. age, gender, weight) and workout statistics (e.g. push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
 
 - This data never leaves your device and is never transmitted to our servers.
 - The data is automatically and permanently deleted when you uninstall the App.
@@ -117,7 +123,7 @@ Your workout statistics (e.g., push-up counts, personal records, goals) are stor
 You have the following rights regarding your personal data:
 
 - **Right of Access (Art. 15 GDPR):** You can request information about the data we hold. Given our Privacy by Design approach, this typically only includes an anonymous PostHog analytics ID.
-- **Right to Erasure (Art. 17 GDPR):** You can delete all local data at any time by uninstalling the App.
+- **Right to Erasure (Art. 17 GDPR):** You can delete all local data at any time using the "Delete All Data" button in the App's Settings, which permanently erases all local app data, resets your analytics ID, and signs you out of RevenueCat — restoring the App to its initial installation state. Alternatively, uninstalling the App achieves the same result.
 - **Right to Withdraw Consent (Art. 7 (3) GDPR):** You can change your tracking preferences at any time in iOS System Settings under **Privacy & Security → Tracking**.
 - **Right to Object (Art. 21 GDPR):** You may object to processing based on legitimate interests at any time.
 - **Right to Lodge a Complaint (Art. 77 GDPR):** You have the right to lodge a complaint with a supervisory authority. The competent authority for VAMIT UG is: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW), Kavalleriestraße 2–4, 40213 Düsseldorf, https://www.ldi.nrw.de
@@ -142,7 +148,13 @@ This App is not directed at children under the age of 13. We do not knowingly co
 
 ---
 
-## 13. Changes to This Privacy Policy
+## 13. Feedback (Featurebase)
+
+Within the App, we provide a link to an external feedback platform ("Featurebase"), where you can submit feature requests and feedback anonymously, without registration or login. When you tap this link, you leave the App and are redirected to Featurebase's website in your device's browser. Any data you choose to enter there (e.g. feedback text) is processed directly by Featurebase, Inc., not by us. We do not receive, store, or have access to any data submitted on that platform. Please refer to Featurebase's own privacy policy for information on how they process data.
+
+---
+
+## 14. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time to reflect changes in the App or applicable law. The current version is always available at vamiapp.com/privacy. Material changes will be communicated via an in-app notice where required by law.
 

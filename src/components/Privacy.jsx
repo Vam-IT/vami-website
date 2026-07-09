@@ -12,7 +12,7 @@ const Privacy = () => {
         className="glass-effect p-8 rounded-2xl mb-8"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Privacy Policy - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Last Updated: June 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Last Updated: July 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
@@ -83,28 +83,30 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">4. Analytics & App Improvement (PostHog)</h2>
             <p className="leading-relaxed mb-3">
-              We use PostHog to monitor app stability and improve features.
+              We use PostHog to monitor app stability and improve features. You have full control over this via a dedicated toggle (&quot;Share anonymous usage data&quot;) in the App's Settings, in addition to Apple's App Tracking Transparency (ATT) prompt.
             </p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Service Provider:</span> PostHog Inc., EU Cloud (server location: Frankfurt, Germany). Data remains within the European Economic Area (EEA) at all times. No analytics data is transferred to the United States.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">If Tracking is Allowed (ATT):</span> If you grant permission via the App Tracking Transparency (ATT) prompt, we collect usage statistics (e.g., features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
+                <span className="text-vami-primary font-semibold">Toggle disabled (opted out):</span> If you disable &quot;Share anonymous usage data&quot; in Settings, PostHog is fully deactivated. No data leaves your device.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">If Tracking is Denied:</span> The App uses daily rotating anonymous IDs. It is technically impossible for us to identify you or link your behaviour across multiple days.
+                <span className="text-vami-primary font-semibold">Toggle enabled, ATT denied or not granted:</span> The App uses daily rotating anonymous IDs, and IP addresses are masked/discarded. It is technically impossible for us to identify you or link your behaviour across multiple days.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Toggle enabled and ATT authorised:</span> We collect usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
               </li>
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Retention:</span> Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Legal Basis:</span> Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics.
+                <span className="text-vami-primary font-semibold">Legal Basis:</span> Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics collected while the in-app toggle is enabled.
               </li>
             </ul>
             <p className="leading-relaxed mt-3">
-              You can withdraw your tracking consent at any time in iOS System Settings under{' '}
-              <span className="text-vami-primary font-semibold">Privacy &amp; Security → Tracking</span>.
+              You can withdraw your consent at any time via the toggle in the App's Settings, or via iOS System Settings under <span className="text-vami-primary font-semibold">Privacy &amp; Security → Tracking</span>.
             </p>
           </section>
 
@@ -192,7 +194,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">8. Local Data Storage (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
-              Your workout statistics (e.g., push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
+              Your profile information (e.g. age, gender, weight) and workout statistics (e.g. push-up counts, personal records, goals) are stored locally on your device using iOS UserDefaults.
             </p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">This data never leaves your device and is never transmitted to our servers.</li>
@@ -220,7 +222,7 @@ const Privacy = () => {
                 <span className="text-vami-primary font-semibold">Right of Access (Art. 15 GDPR):</span> You can request information about the data we hold. Given our Privacy by Design approach, this typically only includes an anonymous PostHog analytics ID.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Right to Erasure (Art. 17 GDPR):</span> You can delete all local data at any time by uninstalling the App.
+                <span className="text-vami-primary font-semibold">Right to Erasure (Art. 17 GDPR):</span> You can delete all local data at any time using the "Delete All Data" button in the App's Settings, which permanently erases all local app data, resets your analytics ID, and signs you out of RevenueCat — restoring the App to its initial installation state. Alternatively, uninstalling the App achieves the same result.
               </li>
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Right to Withdraw Consent (Art. 7 (3) GDPR):</span> You can change your tracking preferences at any time in iOS System Settings under <span className="text-vami-primary font-semibold">Privacy &amp; Security → Tracking</span>.
@@ -264,11 +266,17 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">13. Changes to This Privacy Policy</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">13. Feedback (Featurebase)</h2>
+            <p className="leading-relaxed mb-3">
+              Within the App, we provide a link to an external feedback platform (&quot;Featurebase&quot;), where you can submit feature requests and feedback anonymously, without registration or login. When you tap this link, you leave the App and are redirected to Featurebase's website in your device's browser. Any data you choose to enter there (e.g. feedback text) is processed directly by Featurebase, Inc., not by us. We do not receive, store, or have access to any data submitted on that platform. Please refer to Featurebase's own privacy policy for information on how they process data.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">14. Changes to This Privacy Policy</h2>
             <p className="leading-relaxed">
               We may update this Privacy Policy from time to time to reflect changes in the App or
-              applicable law. The current version is always available at{' '}
-              <span className="text-vami-primary font-semibold">vamiapp.com/privacy</span>. Material
+              applicable law. The current version is always available at <span className="text-vami-primary font-semibold">vamiapp.com/privacy</span>. Material
               changes will be communicated via an in-app notice where required by law.
             </p>
             <p className="leading-relaxed mt-3 italic">
@@ -287,7 +295,7 @@ const Privacy = () => {
         className="glass-effect p-8 rounded-2xl"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Datenschutzerklärung - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Stand: Juni 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Stand: Juli 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
@@ -472,7 +480,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">8. Lokale Datenspeicherung (UserDefaults)</h2>
             <p className="leading-relaxed mb-3">
-              Deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
+              Deine Profildaten (z. B. Alter, Geschlecht, Gewicht) sowie deine Trainingsdaten (z. B. Anzahl der Liegestütze, persönliche Rekorde, Ziele) werden lokal auf deinem Gerät in den iOS UserDefaults gespeichert.
             </p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">Diese Daten verlassen dein Gerät nicht und werden nicht an unsere Server übertragen.</li>
@@ -500,7 +508,7 @@ const Privacy = () => {
                 <span className="text-vami-primary font-semibold">Recht auf Auskunft (Art. 15 DSGVO):</span> Du kannst Auskunft über die von uns gespeicherten Daten verlangen. Aufgrund unseres Privacy-by-Design-Ansatzes handelt es sich in der Regel nur um eine anonyme PostHog-ID.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Recht auf Löschung (Art. 17 DSGVO):</span> Du kannst alle lokalen Daten jederzeit durch Deinstallation der App löschen.
+                <span className="text-vami-primary font-semibold">Recht auf Löschung (Art. 17 DSGVO):</span> Du kannst alle lokalen Daten jederzeit über den Button "Alle Daten löschen" in den Einstellungen der App löschen. Dieser entfernt sämtliche lokalen App-Daten dauerhaft, setzt deine Analyse-ID zurück und meldet dich bei RevenueCat ab — die App wird dadurch in den Zustand einer Neuinstallation versetzt. Alternativ erreichst du dasselbe durch Deinstallation der App.
               </li>
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Recht auf Widerruf (Art. 7 Abs. 3 DSGVO):</span> Du kannst deine Tracking-Einwilligung jederzeit in den iOS-Systemeinstellungen unter <span className="text-vami-primary font-semibold">Datenschutz &amp; Sicherheit → Tracking</span> widerrufen.
@@ -547,13 +555,17 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">13. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+            <h2 className="text-2xl font-semibold text-white mb-3">13. Feedback (Featurebase)</h2>
+            <p className="leading-relaxed mb-3">
+              Innerhalb der App verlinken wir auf eine externe Feedback-Plattform (&quot;Featurebase&quot;), auf der du Feature-Wünsche und Feedback anonym, ohne Registrierung oder Anmeldung, einreichen kannst. Beim Tippen auf diesen Link verlässt du die App und wirst im Browser deines Geräts zur Featurebase-Website weitergeleitet. Etwaige dort von dir eingegebene Daten (z. B. Feedback-Text) werden direkt von Featurebase, Inc. verarbeitet, nicht von uns. Wir erhalten, speichern oder haben keinen Zugriff auf die auf dieser Plattform übermittelten Daten. Informationen zur Datenverarbeitung durch Featurebase findest du in deren eigener Datenschutzerklärung.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">14. Aktualität und Änderung dieser Datenschutzerklärung</h2>
             <p className="leading-relaxed">
               Wir können diese Datenschutzerklärung bei Änderungen der App oder der rechtlichen
-              Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter{' '}
-              <span className="text-vami-primary font-semibold">vamiapp.com/privacy</span> abrufbar.
-              Wesentliche Änderungen werden, soweit gesetzlich erforderlich, durch einen In-App-Hinweis
-              kommuniziert.
+              Anforderungen aktualisieren. Die jeweils aktuelle Fassung ist stets unter <span className="text-vami-primary font-semibold">vamiapp.com/privacy</span> abrufbar. Wesentliche Änderungen werden, soweit gesetzlich erforderlich, durch einen In-App-Hinweis kommuniziert.
             </p>
             <p className="leading-relaxed mt-3 italic">
               VAMIT UG (haftungsbeschränkt) · Petersfeldstraße 16 · 46395 Bocholt · Deutschland

@@ -93,12 +93,26 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. In-App Purchases</h2>
-            <p className="leading-relaxed">
-              Any in-app purchases are processed exclusively by Apple Inc. via the App Store. VAMIT UG
-              does not collect or store payment information. Refunds are subject to Apple&apos;s refund
-              policy.
-            </p>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Auto-Renewable Subscriptions</h2>
+            <div className="space-y-3">
+              <p className="leading-relaxed">
+                The App offers auto-renewable subscriptions ("Subscriptions") that unlock premium features.
+              </p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Subscription Options:</span> The title, duration, and price of each available Subscription (e.g. weekly, monthly, annual) are displayed within the App prior to purchase and on the App Store product page.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Payment:</span> Payment will be charged to your Apple ID account at confirmation of purchase.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Auto-Renewal:</span> Subscriptions automatically renew for the same duration and at the same price (unless changed by us with prior notice as required by applicable law) unless auto-renewal is turned off at least 24 hours before the end of the current subscription period.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Renewal Charges:</span> Your account will be charged for renewal within 24 hours prior to the end of the current period, and the cost of the renewal will be identified.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Managing and Cancelling:</span> You can manage your Subscription and turn off auto-renewal at any time by going to your Apple ID Account Settings after purchase. Cancelling a Subscription does not entitle you to a refund for the current billing period; access to premium features continues until the end of the period already paid for.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">No Refunds by Us:</span> Any refund requests are subject exclusively to Apple&apos;s refund policy and must be submitted directly to Apple, as VAMIT UG does not process payments and has no access to your payment information.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Price Changes:</span> We reserve the right to change Subscription prices at any time. Any price change will be communicated to you in advance, in accordance with Apple&apos;s guidelines, and will apply only to renewals occurring after you have been given the opportunity to review and accept the change.</p>
+            </div>
           </section>
 
           <section>
@@ -261,12 +275,24 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-3">7. In-App-Käufe</h2>
-            <p className="leading-relaxed">
-              Etwaige In-App-Käufe werden ausschließlich über Apple Inc. via App Store abgewickelt.
-              VAMIT UG erhebt oder speichert keine Zahlungsinformationen. Rückerstattungen richten sich
-              nach den Erstattungsrichtlinien von Apple.
-            </p>
+            <h2 className="text-2xl font-semibold text-white mb-3">7. Automatisch verlängerbare Abonnements</h2>
+            <div className="space-y-3">
+              <p className="leading-relaxed">Die App bietet automatisch verlängerbare Abonnements ("Abonnements") an, die Premium-Funktionen freischalten.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Abo-Optionen:</span> Titel, Laufzeit und Preis der jeweils verfügbaren Abonnements (z. B. wöchentlich, monatlich, jährlich) werden vor dem Kauf innerhalb der App sowie auf der Produktseite im App Store angezeigt.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Zahlung:</span> Die Zahlung wird bei Bestätigung des Kaufs deinem Apple-ID-Konto belastet.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Automatische Verlängerung:</span> Abonnements verlängern sich automatisch um denselben Zeitraum und zum selben Preis (sofern nicht mit vorheriger, gesetzlich erforderlicher Ankündigung von uns geändert), sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ablauf des aktuellen Abo-Zeitraums deaktiviert wird.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Abbuchung bei Verlängerung:</span> Dein Konto wird innerhalb von 24 Stunden vor Ablauf des aktuellen Zeitraums für die Verlängerung belastet; die Kosten der Verlängerung werden dabei ausgewiesen.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Verwaltung und Kündigung:</span> Du kannst dein Abonnement jederzeit über die Einstellungen deiner Apple-ID nach dem Kauf verwalten und die automatische Verlängerung deaktivieren. Eine Kündigung berechtigt nicht zu einer Rückerstattung für den laufenden Abrechnungszeitraum; der Zugriff auf Premium-Funktionen besteht bis zum Ende des bereits bezahlten Zeitraums fort.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Keine Rückerstattung durch uns:</span> Rückerstattungsanfragen unterliegen ausschließlich den Erstattungsrichtlinien von Apple und sind direkt bei Apple einzureichen, da VAMIT UG keine Zahlungen verarbeitet und keinen Zugriff auf Zahlungsinformationen hat.</p>
+
+              <p className="leading-relaxed"><span className="text-vami-primary font-semibold">Preisänderungen:</span> Wir behalten uns vor, die Preise für Abonnements jederzeit zu ändern. Preisänderungen werden dir gemäß den Richtlinien von Apple vorab mitgeteilt und gelten erst für Verlängerungen, die erfolgen, nachdem dir Gelegenheit gegeben wurde, die Änderung zu prüfen und zu akzeptieren.</p>
+            </div>
           </section>
 
           <section>

@@ -1,6 +1,6 @@
 # Nutzungsbedingungen – VAMI Push-Ups
 
-**Stand: Juni 2026**
+**Stand: Juli 2026**
 
 Bitte lies diese Nutzungsbedingungen sorgfältig durch, bevor du die App herunterlädst oder nutzt.
 

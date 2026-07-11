@@ -54,9 +54,23 @@ All content, design, trademarks, and source code of the App are the intellectual
 
 ---
 
-## 7. In-App Purchases
+## 7. Auto-Renewable Subscriptions
 
-Any in-app purchases are processed exclusively by Apple Inc. via the App Store. VAMIT UG does not collect or store payment information. Refunds are subject to Apple's refund policy.
+The App offers auto-renewable subscriptions ("Subscriptions") that unlock premium features.
+
+**Subscription Options:** The title, duration, and price of each available Subscription (e.g. weekly, monthly, annual) are displayed within the App prior to purchase and on the App Store product page.
+
+**Payment:** Payment will be charged to your Apple ID account at confirmation of purchase.
+
+**Auto-Renewal:** Subscriptions automatically renew for the same duration and at the same price (unless changed by us with prior notice as required by applicable law) unless auto-renewal is turned off at least 24 hours before the end of the current subscription period.
+
+**Renewal Charges:** Your account will be charged for renewal within 24 hours prior to the end of the current period, and the cost of the renewal will be identified.
+
+**Managing and Cancelling:** You can manage your Subscription and turn off auto-renewal at any time by going to your Apple ID Account Settings after purchase. Cancelling a Subscription does not entitle you to a refund for the current billing period; access to premium features continues until the end of the period already paid for.
+
+**No Refunds by Us:** Any refund requests are subject exclusively to Apple's refund policy and must be submitted directly to Apple, as VAMIT UG does not process payments and has no access to your payment information.
+
+**Price Changes:** We reserve the right to change Subscription prices at any time. Any price change will be communicated to you in advance, in accordance with Apple's guidelines, and will apply only to renewals occurring after you have been given the opportunity to review and accept the change.
 
 ---
 

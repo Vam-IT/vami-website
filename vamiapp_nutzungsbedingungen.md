@@ -54,9 +54,23 @@ Alle Inhalte, das Design, Marken und der Quellcode der App sind geistiges Eigent
 
 ---
 
-## 7. In-App-Käufe
+## 7. Automatisch verlängerbare Abonnements
 
-Etwaige In-App-Käufe werden ausschließlich über Apple Inc. via App Store abgewickelt. VAMIT UG erhebt oder speichert keine Zahlungsinformationen. Rückerstattungen richten sich nach den Erstattungsrichtlinien von Apple.
+Die App bietet automatisch verlängerbare Abonnements ("Abonnements") an, die Premium-Funktionen freischalten.
+
+**Abo-Optionen:** Titel, Laufzeit und Preis der jeweils verfügbaren Abonnements (z. B. wöchentlich, monatlich, jährlich) werden vor dem Kauf innerhalb der App sowie auf der Produktseite im App Store angezeigt.
+
+**Zahlung:** Die Zahlung wird bei Bestätigung des Kaufs deinem Apple-ID-Konto belastet.
+
+**Automatische Verlängerung:** Abonnements verlängern sich automatisch um denselben Zeitraum und zum selben Preis (sofern nicht mit vorheriger, gesetzlich erforderlicher Ankündigung von uns geändert), sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ablauf des aktuellen Abo-Zeitraums deaktiviert wird.
+
+**Abbuchung bei Verlängerung:** Dein Konto wird innerhalb von 24 Stunden vor Ablauf des aktuellen Zeitraums für die Verlängerung belastet; die Kosten der Verlängerung werden dabei ausgewiesen.
+
+**Verwaltung und Kündigung:** Du kannst dein Abonnement jederzeit über die Einstellungen deiner Apple-ID nach dem Kauf verwalten und die automatische Verlängerung deaktivieren. Eine Kündigung berechtigt nicht zu einer Rückerstattung für den laufenden Abrechnungszeitraum; der Zugriff auf Premium-Funktionen besteht bis zum Ende des bereits bezahlten Zeitraums fort.
+
+**Keine Rückerstattung durch uns:** Rückerstattungsanfragen unterliegen ausschließlich den Erstattungsrichtlinien von Apple und sind direkt bei Apple einzureichen, da VAMIT UG keine Zahlungen verarbeitet und keinen Zugriff auf Zahlungsinformationen hat.
+
+**Preisänderungen:** Wir behalten uns vor, die Preise für Abonnements jederzeit zu ändern. Preisänderungen werden dir gemäß den Richtlinien von Apple vorab mitgeteilt und gelten erst für Verlängerungen, die erfolgen, nachdem dir Gelegenheit gegeben wurde, die Änderung zu prüfen und zu akzeptieren.
 
 ---
 

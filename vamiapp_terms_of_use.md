@@ -1,6 +1,6 @@
 # Terms of Use – VAMI Push-Ups
 
-**Last Updated: June 2026**
+**Last Updated: July 2026**
 
 Please read these Terms of Use carefully before downloading or using the App.
 

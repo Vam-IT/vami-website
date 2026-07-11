@@ -12,7 +12,7 @@ const Terms = () => {
         className="glass-effect p-8 rounded-2xl mb-8"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Terms of Use - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Last Updated: June 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Last Updated: July 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
@@ -189,7 +189,7 @@ const Terms = () => {
         className="glass-effect p-8 rounded-2xl"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Nutzungsbedingungen - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Stand: Juni 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Stand: Juli 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">

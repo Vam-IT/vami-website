@@ -1,6 +1,6 @@
 # Datenschutzerklärung – VAMI Push-Ups
 
-**Stand: Juni 2026**
+**Stand: August 2026**
 
 Der Schutz deiner Privatsphäre ist uns äußerst wichtig. Diese Datenschutzerklärung erklärt, wie die App VAMI Push-Ups (nachfolgend „die App") Daten verarbeitet und welche Rechte du hast.
 
@@ -41,15 +41,16 @@ Die Kernfunktion der App besteht darin, deine Liegestütze mithilfe der Kamera z
 
 ## 4. Analyse & App-Verbesserung (PostHog)
 
-Wir nutzen den Analysedienst PostHog, um Fehler zu beheben und die App zu verbessern.
+Wir nutzen den Analysedienst PostHog, um Fehler zu beheben, die Stabilität der App zu überwachen und Funktionen zu verbessern. Du hast die volle Kontrolle hierüber über den Schalter *"Anonyme Nutzungsdaten teilen"* in den Einstellungen der App sowie den vorgeschalteten Einwilligungsdialog.
 
-- **Anbieter:** PostHog Inc., EU-Cloud (Serverstandort: Frankfurt, Deutschland). Deine Daten verbleiben jederzeit innerhalb des Europäischen Wirtschaftsraums (EWR). Eine Übermittlung in die USA findet nicht statt.
-- **Bei erteilter Einwilligung (ATT):** Wenn du dem Tracking über den App Tracking Transparency (ATT)-Dialog zustimmst, erfassen wir Nutzungsstatistiken (z. B. genutzte Funktionen, Sitzungsdauer) verknüpft mit einer persistenten anonymen ID. Eine persönliche Identifizierung ist damit nicht möglich.
-- **Bei Ablehnung des Trackings:** Die App verwendet täglich rotierende, anonyme IDs. Eine Identifizierung deiner Person oder eine tagesübergreifende Verknüpfung deines Verhaltens ist uns technisch nicht möglich.
+- **Anbieter:** PostHog Inc., EU-Cloud (Serverstandort: Frankfurt am Main, Deutschland). Deine Daten verbleiben jederzeit innerhalb des Europäischen Wirtschaftsraums (EWR). Eine Übermittlung in die USA findet nicht statt.
+- **IP-Maskierung:** IP-Adressen und GeoIP-Standortdaten werden clientseitig vollständig verworfen und nicht erfasst (`$ip: "0.0.0.0"`).
+- **Bei erteilter Einwilligung (Opt-In):** Wenn du der Erfassung zustimmst, erfassen wir pseudonyme Nutzungsstatistiken (z. B. genutzte Funktionen, Sitzungsdauer) verknüpft mit einer zufällig generierten, persistenten anonymen ID (UUID). Diese Daten lassen zu keinem Zeitpunkt Rückschlüsse auf deine reale Identität zu.
+- **Bei Ablehnung / deaktiviertem Schalter (Opt-Out):** Wenn du die Option deaktivierst oder ablehnst, ist PostHog vollständig deaktiviert. Es verlassen keinerlei Analysedaten dein Gerät.
 - **Speicherdauer:** Anonyme Analysedaten werden maximal 12 Monate gespeichert und danach automatisch gelöscht.
-- **Rechtsgrundlage:** Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) für Tracking mit persistenter anonymer ID; berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) für anonymisierte Stabilitäts- und Leistungsstatistiken.
+- **Rechtsgrundlage:** Deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
 
-Du kannst deine Tracking-Einwilligung jederzeit in den iOS-Systemeinstellungen unter **Datenschutz & Sicherheit → Tracking** widerrufen.
+Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft über den Schalter *"Anonyme Nutzungsdaten teilen"* in den Einstellungen der App widerrufen.
 
 ---
 

@@ -1,6 +1,6 @@
 # Privacy Policy – VAMI Push-Ups
 
-**Last Updated: July 2026**
+**Last Updated: August 2026**
 
 Your privacy is our top priority. This Privacy Policy explains how the App VAMI Push-Ups (hereinafter "the App") processes data and what your rights are.
 
@@ -40,21 +40,16 @@ The core feature of the App is counting your push-ups using your device's camera
 
 ## 4. Analytics & App Improvement (PostHog)
 
-We use PostHog to monitor app stability and improve features. You have full control over this via a dedicated toggle ("Share anonymous usage data") in the App's Settings, in addition to Apple's App Tracking Transparency (ATT) prompt.
+We use PostHog to monitor app stability and improve features. You have full control over this via the *"Share anonymous usage data"* toggle in the App's Settings and the initial in-app consent screen.
 
 - **Service Provider:** PostHog Inc., EU Cloud (server location: Frankfurt, Germany). Data remains within the European Economic Area (EEA) at all times. No analytics data is transferred to the United States.
+- **IP Masking:** IP addresses and GeoIP location tracking are completely disabled/scrubbed on-device (`$ip: "0.0.0.0"`).
+- **Toggle enabled (opted in):** If you consent to sharing usage data, we collect pseudonymous usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
+- **Toggle disabled (opted out):** If you disable *"Share anonymous usage data"* in Settings or decline the consent prompt, PostHog is fully deactivated. No analytics data leaves your device.
+- **Retention:** Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
+- **Legal Basis:** Consent (Art. 6 (1) (a) GDPR).
 
-- **Toggle disabled (opted out):** If you disable "Share anonymous usage data" in Settings, PostHog is fully deactivated. No data leaves your device.
-
-- **Toggle enabled, ATT denied or not granted:** The App uses daily rotating anonymous IDs, and IP addresses are masked/discarded. It is technically impossible for us to identify you or link your behaviour across multiple days.
-
-- **Toggle enabled and ATT authorised:** We collect usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
-
-**Retention:** Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
-
-**Legal Basis:** Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics collected while the in-app toggle is enabled.
-
-You can withdraw your consent at any time via the toggle in the App's Settings, or via iOS System Settings under **Privacy & Security → Tracking**.
+You can withdraw your consent at any time via the *"Share anonymous usage data"* toggle in the App's Settings.
 
 ---
 

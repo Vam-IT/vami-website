@@ -12,7 +12,7 @@ const Privacy = () => {
         className="glass-effect p-8 rounded-2xl mb-8"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Privacy Policy - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Last Updated: July 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Last Updated: August 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
@@ -83,30 +83,30 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">4. Analytics & App Improvement (PostHog)</h2>
             <p className="leading-relaxed mb-3">
-              We use PostHog to monitor app stability and improve features. You have full control over this via a dedicated toggle (&quot;Share anonymous usage data&quot;) in the App's Settings, in addition to Apple's App Tracking Transparency (ATT) prompt.
+              We use PostHog to monitor app stability and improve features. You have full control over this via the <span className="text-vami-primary font-semibold">&quot;Share anonymous usage data&quot;</span> toggle in the App&apos;s Settings and the initial in-app consent screen.
             </p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Service Provider:</span> PostHog Inc., EU Cloud (server location: Frankfurt, Germany). Data remains within the European Economic Area (EEA) at all times. No analytics data is transferred to the United States.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Toggle disabled (opted out):</span> If you disable &quot;Share anonymous usage data&quot; in Settings, PostHog is fully deactivated. No data leaves your device.
+                <span className="text-vami-primary font-semibold">IP Masking:</span> IP addresses and GeoIP location tracking are completely disabled/scrubbed on-device (<span className="font-mono">$ip: &quot;0.0.0.0&quot;</span>).
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Toggle enabled, ATT denied or not granted:</span> The App uses daily rotating anonymous IDs, and IP addresses are masked/discarded. It is technically impossible for us to identify you or link your behaviour across multiple days.
+                <span className="text-vami-primary font-semibold">Toggle enabled (opted in):</span> If you consent to sharing usage data, we collect pseudonymous usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Toggle enabled and ATT authorised:</span> We collect usage statistics (e.g. features used, session duration) linked to a persistent anonymous ID. This data cannot be used to identify you personally.
+                <span className="text-vami-primary font-semibold">Toggle disabled (opted out):</span> If you disable &quot;Share anonymous usage data&quot; in Settings or decline the consent prompt, PostHog is fully deactivated. No analytics data leaves your device.
               </li>
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Retention:</span> Anonymous analytics data is retained for a maximum of 12 months, after which it is automatically deleted.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Legal Basis:</span> Consent (Art. 6 (1) (a) GDPR) for analytics linked to a persistent anonymous ID; Legitimate Interest (Art. 6 (1) (f) GDPR) for anonymised stability and performance metrics collected while the in-app toggle is enabled.
+                <span className="text-vami-primary font-semibold">Legal Basis:</span> Consent (Art. 6 (1) (a) GDPR).
               </li>
             </ul>
             <p className="leading-relaxed mt-3">
-              You can withdraw your consent at any time via the toggle in the App's Settings, or via iOS System Settings under <span className="text-vami-primary font-semibold">Privacy &amp; Security → Tracking</span>.
+              You can withdraw your consent at any time via the <span className="text-vami-primary font-semibold">&quot;Share anonymous usage data&quot;</span> toggle in the App&apos;s Settings.
             </p>
           </section>
 
@@ -295,7 +295,7 @@ const Privacy = () => {
         className="glass-effect p-8 rounded-2xl"
       >
         <h1 className="text-4xl font-bold text-gradient mb-4">Datenschutzerklärung - VAMI Push-Ups</h1>
-        <p className="text-sm text-gray-400 mb-8">Stand: Juli 2026</p>
+        <p className="text-sm text-gray-400 mb-8">Stand: August 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
@@ -371,28 +371,30 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">4. Analyse & App-Verbesserung (PostHog)</h2>
             <p className="leading-relaxed mb-3">
-              Wir nutzen den Analysedienst PostHog, um Fehler zu beheben und die App zu verbessern.
+              Wir nutzen den Analysedienst PostHog, um Fehler zu beheben, die Stabilität der App zu überwachen und Funktionen zu verbessern. Du hast die volle Kontrolle hierüber über den Schalter <span className="text-vami-primary font-semibold">&quot;Anonyme Nutzungsdaten teilen&quot;</span> in den Einstellungen der App sowie den vorgeschalteten Einwilligungsdialog.
             </p>
             <ul className="space-y-2 ml-4">
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Anbieter:</span> PostHog Inc., EU-Cloud (Serverstandort: Frankfurt, Deutschland). Deine Daten verbleiben jederzeit innerhalb des Europäischen Wirtschaftsraums (EWR). Eine Übermittlung in die USA findet nicht statt.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Bei erteilter Einwilligung (ATT):</span> Wenn du dem Tracking über den App Tracking Transparency (ATT)-Dialog zustimmst, erfassen wir Nutzungsstatistiken (z. B. genutzte Funktionen, Sitzungsdauer) verknüpft mit einer persistenten anonymen ID. Eine persönliche Identifizierung ist damit nicht möglich.
+                <span className="text-vami-primary font-semibold">IP-Maskierung:</span> IP-Adressen und GeoIP-Standortdaten werden clientseitig vollständig verworfen und nicht erfasst (<span className="font-mono">$ip: &quot;0.0.0.0&quot;</span>).
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Bei Ablehnung des Trackings:</span> Die App verwendet täglich rotierende, anonyme IDs. Eine Identifizierung deiner Person oder eine tagesübergreifende Verknüpfung deines Verhaltens ist uns technisch nicht möglich.
+                <span className="text-vami-primary font-semibold">Bei erteilter Einwilligung (Opt-In):</span> Wenn du der Erfassung zustimmst, erfassen wir pseudonyme Nutzungsstatistiken (z. B. genutzte Funktionen, Sitzungsdauer) verknüpft mit einer zufällig generierten, persistenten anonymen ID (UUID). Diese Daten lassen zu keinem Zeitpunkt Rückschlüsse auf deine reale Identität zu.
+              </li>
+              <li className="leading-relaxed">
+                <span className="text-vami-primary font-semibold">Bei Ablehnung / deaktiviertem Schalter (Opt-Out):</span> Wenn du die Option deaktivierst oder ablehnst, ist PostHog vollständig deaktiviert. Es verlassen keinerlei Analysedaten dein Gerät.
               </li>
               <li className="leading-relaxed">
                 <span className="text-vami-primary font-semibold">Speicherdauer:</span> Anonyme Analysedaten werden maximal 12 Monate gespeichert und danach automatisch gelöscht.
               </li>
               <li className="leading-relaxed">
-                <span className="text-vami-primary font-semibold">Rechtsgrundlage:</span> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) für Tracking mit persistenter anonymer ID; berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) für anonymisierte Stabilitäts- und Leistungsstatistiken.
+                <span className="text-vami-primary font-semibold">Rechtsgrundlage:</span> Deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
               </li>
             </ul>
             <p className="leading-relaxed mt-3">
-              Du kannst deine Tracking-Einwilligung jederzeit in den iOS-Systemeinstellungen unter{' '}
-              <span className="text-vami-primary font-semibold">Datenschutz &amp; Sicherheit → Tracking</span> widerrufen.
+              Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft über den Schalter <span className="text-vami-primary font-semibold">&quot;Anonyme Nutzungsdaten teilen&quot;</span> in den Einstellungen der App widerrufen.
             </p>
           </section>
 

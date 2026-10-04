@@ -11,7 +11,7 @@ const Terms = () => {
         transition={{ duration: 0.5 }}
         className="glass-effect p-8 rounded-2xl mb-8"
       >
-        <h1 className="text-4xl font-bold text-gradient mb-4">Terms of Use - VAMI Push-Ups</h1>
+        <h1 className="text-4xl font-bold text-gradient mb-4">Terms of Use - UNREP - Unlock Apps with Reps</h1>
         <p className="text-sm text-gray-400 mb-8">Last Updated: July 2026</p>
 
         <div className="space-y-6 text-gray-300">
@@ -22,7 +22,7 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
             <p className="leading-relaxed">
-              By downloading, installing, or using the App VAMI Push-Ups (hereinafter &quot;the App&quot;),
+              By downloading, installing, or using the App UNREP - Unlock Apps with Reps (hereinafter &quot;the App&quot;),
               you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree
               to these terms, do not download or use the App.
             </p>
@@ -188,7 +188,7 @@ const Terms = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="glass-effect p-8 rounded-2xl"
       >
-        <h1 className="text-4xl font-bold text-gradient mb-4">Nutzungsbedingungen - VAMI Push-Ups</h1>
+        <h1 className="text-4xl font-bold text-gradient mb-4">Nutzungsbedingungen - UNREP - Unlock Apps with Reps</h1>
         <p className="text-sm text-gray-400 mb-8">Stand: Juli 2026</p>
 
         <div className="space-y-6 text-gray-300">
@@ -200,7 +200,7 @@ const Terms = () => {
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">1. Annahme der Bedingungen</h2>
             <p className="leading-relaxed">
-              Durch das Herunterladen, Installieren oder die Nutzung der App VAMI Push-Ups (nachfolgend
+              Durch das Herunterladen, Installieren oder die Nutzung der App UNREP - Unlock Apps with Reps (nachfolgend
               &quot;die App&quot;) erklärst du dich mit diesen Nutzungsbedingungen sowie unserer
               Datenschutzerklärung einverstanden. Wenn du mit diesen Bedingungen nicht einverstanden bist,
               darfst du die App nicht herunterladen oder nutzen.

@@ -1,8 +1,8 @@
-# Datenschutzerklärung – VAMI Push-Ups
+# Datenschutzerklärung – UNREP - Unlock Apps with Reps
 
 **Stand: August 2026**
 
-Der Schutz deiner Privatsphäre ist uns äußerst wichtig. Diese Datenschutzerklärung erklärt, wie die App VAMI Push-Ups (nachfolgend „die App") Daten verarbeitet und welche Rechte du hast.
+Der Schutz deiner Privatsphäre ist uns äußerst wichtig. Diese Datenschutzerklärung erklärt, wie die App UNREP - Unlock Apps with Reps (nachfolgend „die App") Daten verarbeitet und welche Rechte du hast.
 
 ---
 

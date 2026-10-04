@@ -1,8 +1,8 @@
-# Privacy Policy – VAMI Push-Ups
+# Privacy Policy – UNREP - Unlock Apps with Reps
 
 **Last Updated: August 2026**
 
-Your privacy is our top priority. This Privacy Policy explains how the App VAMI Push-Ups (hereinafter "the App") processes data and what your rights are.
+Your privacy is our top priority. This Privacy Policy explains how the App UNREP - Unlock Apps with Reps (hereinafter "the App") processes data and what your rights are.
 
 ---
 

@@ -36,9 +36,9 @@ const Navbar = () => {
             href="#"
             whileTap={{ scale: 0.95 }}
             className="text-2xl font-black text-gradient-premium tracking-tight"
-            aria-label="VAMI - Go to homepage"
+            aria-label="UNREP - Go to homepage"
           >
-            VAMI
+            UNREP
           </motion.a>
 
           {/* App Store Button */}
@@ -50,7 +50,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-black hover:bg-gray-900 text-white px-4 py-2 rounded-full font-semibold text-xs shadow-lg transition-all border border-white/20 flex items-center gap-1.5 touch-manipulation"
             style={{ WebkitTapHighlightColor: 'transparent' }}
-            aria-label="Download VAMI on the App Store"
+            aria-label="Download UNREP on the App Store"
             rel="noopener noreferrer"
             target="_blank"
           >

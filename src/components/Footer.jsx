@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </nav>
         <p className="text-[11px] text-gray-600">
-          © {currentYear} VAMI. All rights reserved.
+          © {currentYear} UNREP. All rights reserved.
         </p>
       </div>
     </footer>

@@ -66,7 +66,7 @@ export const NAV_LINKS = [
 
 // Meta Tags
 export const META = {
-  title: 'VAMI - AI-Powered Push-up Training | Free iPhone App',
+  title: 'UNREP - Unlock Apps with Reps',
   description: 'VAMI - AI-Powered Push-up Training. Join 5,000+ users. 4.8★ rating. Perfect your form with real-time AI feedback. Free on App Store.',
   keywords: 'push-up app, fitness tracker, AI workout, form analysis, iPhone fitness app, push up counter, workout tracker, fitness AI',
   author: 'VAMI',

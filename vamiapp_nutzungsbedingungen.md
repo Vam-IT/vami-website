@@ -1,4 +1,4 @@
-# Nutzungsbedingungen – VAMI Push-Ups
+# Nutzungsbedingungen – UNREP - Unlock Apps with Reps
 
 **Stand: Juli 2026**
 
@@ -8,7 +8,7 @@ Bitte lies diese Nutzungsbedingungen sorgfältig durch, bevor du die App herunte
 
 ## 1. Annahme der Bedingungen
 
-Durch das Herunterladen, Installieren oder die Nutzung der App VAMI Push-Ups (nachfolgend „die App") erklärst du dich mit diesen Nutzungsbedingungen sowie unserer Datenschutzerklärung einverstanden. Wenn du mit diesen Bedingungen nicht einverstanden bist, darfst du die App nicht herunterladen oder nutzen.
+Durch das Herunterladen, Installieren oder die Nutzung der App UNREP - Unlock Apps with Reps (nachfolgend „die App") erklärst du dich mit diesen Nutzungsbedingungen sowie unserer Datenschutzerklärung einverstanden. Wenn du mit diesen Bedingungen nicht einverstanden bist, darfst du die App nicht herunterladen oder nutzen.
 
 ---
 

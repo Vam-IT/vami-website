@@ -11,12 +11,12 @@ const Privacy = () => {
         transition={{ duration: 0.5 }}
         className="glass-effect p-8 rounded-2xl mb-8"
       >
-        <h1 className="text-4xl font-bold text-gradient mb-4">Privacy Policy - VAMI Push-Ups</h1>
+        <h1 className="text-4xl font-bold text-gradient mb-4">Privacy Policy - UNREP - Unlock Apps with Reps</h1>
         <p className="text-sm text-gray-400 mb-8">Last Updated: August 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
-            Your privacy is our top priority. This Privacy Policy explains how the App VAMI Push-Ups
+            Your privacy is our top priority. This Privacy Policy explains how the App UNREP - Unlock Apps with Reps
             (hereinafter &quot;the App&quot;) processes data and what your rights are.
           </p>
 
@@ -294,13 +294,13 @@ const Privacy = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="glass-effect p-8 rounded-2xl"
       >
-        <h1 className="text-4xl font-bold text-gradient mb-4">Datenschutzerklärung - VAMI Push-Ups</h1>
+        <h1 className="text-4xl font-bold text-gradient mb-4">Datenschutzerklärung - UNREP - Unlock Apps with Reps</h1>
         <p className="text-sm text-gray-400 mb-8">Stand: August 2026</p>
 
         <div className="space-y-6 text-gray-300">
           <p className="leading-relaxed">
             Der Schutz deiner Privatsphäre ist uns äußerst wichtig. Diese Datenschutzerklärung erklärt,
-            wie die App VAMI Push-Ups (nachfolgend &quot;die App&quot;) Daten verarbeitet und welche Rechte
+            wie die App UNREP - Unlock Apps with Reps (nachfolgend &quot;die App&quot;) Daten verarbeitet und welche Rechte
             du hast.
           </p>
 

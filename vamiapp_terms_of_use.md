@@ -1,4 +1,4 @@
-# Terms of Use – VAMI Push-Ups
+# Terms of Use – UNREP - Unlock Apps with Reps
 
 **Last Updated: July 2026**
 
@@ -8,7 +8,7 @@ Please read these Terms of Use carefully before downloading or using the App.
 
 ## 1. Acceptance of Terms
 
-By downloading, installing, or using the App VAMI Push-Ups (hereinafter "the App"), you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, do not download or use the App.
+By downloading, installing, or using the App UNREP - Unlock Apps with Reps (hereinafter "the App"), you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, do not download or use the App.
 
 ---
 
